@@ -670,15 +670,15 @@ nav ul .bot1 {
 
 /*Div que abriga a logo da ECO+ no footer*/
 .logoFooter {
-  width: 30%;
-  height: 150px;
+  width: 20%;
+  margin-top: 80px;
   margin-inline: 100px;
 }
 
 /*Alterações da imagem como tamanho e posição dentro da div*/
 .logoFooter img {
-  width: 65%;
-  padding: 80px 0px 0px 0px;
+  width: 100%;
+  
 }
 
 /*Div que sustenta Logo Ecoplus, intel, advantech, microsoft e e-book */
@@ -686,8 +686,11 @@ nav ul .bot1 {
   color: white;
   display: inline-block;
   list-style: none;
-  padding: 20px 560px;
-  margin-top: -150px;
+  width: 32%;
+  justify-content: center;
+  margin-left: 470px;
+  padding: 20px;
+  margin-top: -151px;
 }
 
 /*Lista da barra de navegação acima de "Política de Privacidade"*/
@@ -753,17 +756,14 @@ nav ul .bot1 {
 
 /*Marca d'agua Ecoplus*/
 .marcaDagua {
-  margin-top: 200px;
+  margin-top: 215px;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   background: linear-gradient(to bottom, #e0e0e0, #eeeeee39);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-left: 1220px;
   background-clip: text;
   width: 10%;
 }
 
-.footer .marcaDagua
-{
-  margin-left: 1350px;
-}
