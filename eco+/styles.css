@@ -1,0 +1,392 @@
+/*Style global*/
+* {
+  font-family: "Roboto";
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Conteúdo do body */
+body {
+  background-image: url(../index/Gallery/content.png);
+  background-size: contain;
+}
+
+/* Div de cabeçalho */
+.container {
+  margin: 0 auto;
+}
+
+/* Barra de navegação */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controle da logo à esquerda */
+.logo {
+  display: block;
+  transition: 0.6s;
+  width: 24%;
+  padding: 25px;
+  margin-left: 136px;
+}
+
+/* Efeito no logo ao passar o mouse */
+.logo:hover {
+  display: block;
+  border-radius: 10px;
+  height: 126px;
+  box-shadow: 0 0 20px #00ff00, 0 0 10px white, 0 0 40px black;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+
+/* Lista: Inicio, Eco+, Soluções, Cases, News, Clientes e Contato */
+nav ul {
+  word-spacing: 8px;
+  padding: 25px;
+  margin-right: 138px;
+  list-style: none;
+}
+
+/* Posicionamento e tamanho nos itens dentro da lista */
+nav ul li {
+  padding: 23px 0px 27px 0px;
+  margin-left: -2px;
+  display: inline-block;
+}
+
+/* Estilização do item da lista clicável */
+nav ul li a {
+  padding: 10px 14px;
+  color: black;
+  font-size: 11pt;
+  font-weight: 750;
+  transition: 0.5s;
+}
+
+/* Estilização de hover */
+nav ul a:hover {
+  filter: brightness(2);
+  background-color: #008d0a;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 14px;
+}
+
+/* Botão de contato 1 localizado no cabeçalho ao lado direito */
+nav ul .bot1 {
+  padding: 11px 33px;
+  border-radius: 30px;
+  border: none;
+  background-color: #008d0a;
+  color: white;
+  margin-left: 20px;
+  font-weight: 650;
+  font-size: 15px;
+}
+
+/* Estilização de hover do botão de contato 1 */
+.bot1:hover {
+  padding: 11px 33px;
+  transition: 0.4s;
+  color: black;
+  filter: brightness(2);
+  border-radius: 30px;
+  background-color: #06bc10;
+}
+
+.card1 {
+  width: 100%;
+  display: inline-block;
+}
+
+.text {
+  display: inline-flex;
+  margin-left: 129px;
+  margin-top: 114px;
+  width: 580px;
+  height: 480px;
+  box-shadow: 0 0 50px -10px black !important;
+  background: white;
+}
+
+.papper {
+  display: block;
+  padding: 28px 20px 0px 50px;
+  background-image: url(../index/Gallery/RETANGULO-ECO-PLUS-1.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.papper h4 {
+  width: 100%;
+  font-size: 24px;
+  margin-left: -3px;
+  color: #008d0a;
+  line-height: 35px;
+  word-spacing: 9px;
+}
+
+.papper p {
+  margin-top: 20px;
+  margin-left: -2px;
+  font-weight: 200;
+  font-size: 16.5px;
+  text-align: justify;
+}
+
+.papper ul {
+  margin-top: 20px;
+  list-style-position: inside;
+  display: block;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.papper h6 {
+  margin-top: 50px;
+  font-weight: 200;
+  font-size: 16.5px;
+}
+
+.papper ul li::marker {
+  content: "• ";
+  font-size: 15px;
+}
+
+.image {
+  width: 40%;
+  width: 605px;
+  margin-left: 772px;
+  margin-top: -510px;
+}
+
+.card2 {
+  width: 100%;
+  display: inline-flex;
+  margin-top: 100px;
+}
+
+.text2 {
+  display: inline-flex;
+  margin-top: 190px;
+  margin-left: -250px;
+  width: 47%;
+  height: 390px;
+  box-shadow: 0 0 50px -10px black !important;
+  background: white;
+}
+
+.papper2 {
+  padding: 28px 20px 0px 50px;
+  background-image: url(../index/Gallery/RETANGULO-ECO-PLUS-1.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.papper2 h4 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: -3px;
+  color: #009d00;
+  line-height: 35px;
+}
+
+.papper2 p {
+  margin-top: 30px;
+  margin-left: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: justify;
+  word-wrap: break-word;
+  width: 96%;
+}
+
+.papper2 ul {
+  color: #838d94;
+  margin-top: 20px;
+  list-style: none;
+  display: block;
+  font-weight: 550;
+  line-height: 40px;
+  list-style-position: inside;
+}
+
+.papper2 h6 {
+  margin-top: 50px;
+  font-weight: 200;
+  font-size: 16.5px;
+}
+
+.papper2 ul li::marker {
+  content: "+ ";
+  color: #068c10;
+  font-size: 15px;
+}
+
+.card2 img {
+  margin-left: 141px;
+}
+
+.card3 {
+  margin-top: 120px;
+}
+
+.text3 {
+  display: inline-flex;
+  margin-top: 190px;
+  margin-left: -250px;
+  width: 80%;
+  height: 390px;
+  box-shadow: 0 0 50px -10px black !important;
+  background: white;
+}
+
+.papper3 {
+  padding: 28px 20px 0px 50px;
+  background-image: url(../index/Gallery/RETANGULO-ECO-PLUS-1.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.papper h4 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: -3px;
+  color: #009d00;
+  line-height: 35px;
+}
+
+.papper p {
+  margin-top: 30px;
+  margin-left: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: justify;
+  word-wrap: break-word;
+  width: 96%;
+}
+
+.card3 .imgage {
+  margin-left: 141px;
+  width: 40%;
+}
+
+/*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/
+.footer {
+  border-top: 5px solid;
+  /* adjust the width as needed */
+  border-image: linear-gradient(to right, #000000, #17b317);
+  border-image-slice: 1;
+  background-color: #383838;
+  display: inline-block;
+  height: 500px;
+}
+
+/*Alteração da cor do texto dentro da tag a*/
+.footer a {
+  color: white;
+}
+
+/*Div que abriga a logo da ECO+ no footer*/
+.logoFooter {
+  width: 30%;
+  height: 150px;
+  margin-inline: 100px;
+}
+
+/*Alterações da imagem como tamanho e posição dentro da div*/
+.logoFooter img {
+  width: 65%;
+  padding: 80px 0px 0px 0px;
+}
+
+/*Div que sustenta Logo Ecoplus, intel, advantech, microsoft e e-book */
+.footerNav {
+  color: white;
+  display: inline-block;
+  list-style: none;
+  padding: 20px 560px;
+  margin-top: -150px;
+}
+
+/*Lista da barra de navegação acima de "Política de Privacidade"*/
+.footerNav ul {
+  width: 100%;
+  list-style: none;
+  display: inline-flex;
+  margin-top: -90px;
+}
+
+/*Itens da lista*/
+.footerNav li {
+  word-spacing: 10px;
+  padding: 0px 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*Div que sustenta a política de privacidade, email, e logos*/
+.content {
+  font-size: 16;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+/*Logo da Microsoft*/
+.microsoftLogo {
+  padding: 0px 0px 0px 140px;
+}
+
+/*Logo Intel*/
+.intelLogo {
+  padding: 0px 0px 0px 140px;
+}
+
+/*Logo Advantech*/
+.advantechLogo {
+  padding: 0px 0px 0px 100px;
+}
+
+/*Div que sustenta a imagem do ebook*/
+.ebook {
+  margin-top: -465px;
+  border-radius: 20px;
+  width: 19%;
+  margin-left: 1050px;
+  box-shadow: 25px 15px 10px rgba(0, 0, 0, 0.3),
+    15px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Botão para download do ebook*/
+.downloadEbook {
+  background-color: #067a0b;
+  width: 300px;
+  margin-top: -10px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 50px;
+  font-weight: 200;
+}
+
+/*Marca d'agua Ecoplus*/
+.marcaDagua {
+  margin-top: 200px;
+  text-align: center;
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+  background: linear-gradient(to bottom, #e0e0e0, #eeeeee39);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 2px;
+}
