@@ -719,17 +719,19 @@ nav ul .bot1 {
 
 /*Logo da Microsoft*/
 .microsoftLogo {
-  padding: 0px 0px 0px 140px;
+  padding-left: 33%;
 }
 
 /*Logo Intel*/
 .intelLogo {
-  padding: 0px 0px 0px 140px;
+  margin-top: 5%;
+  padding-left: 33%;
 }
 
 /*Logo Advantech*/
-.advantechLogo {
-  padding: 0px 0px 0px 100px;
+.advantechLogo
+{
+  padding-left: 26%;
 }
 
 /*Div que sustenta a imagem do ebook*/
