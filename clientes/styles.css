@@ -448,7 +448,7 @@ nav ul .bot1
    margin-top: 80px;
    padding: 11px 13px;
    transition: 1s;
-   margin-left: 630px;
+   margin-left: 42%;
 }
 
 body:hover #bot4
@@ -466,6 +466,7 @@ body:hover #bot4
   background-color: #383838;
   display: inline-block;
   height: 500px;
+  margin-top: 80px;
 }
 
 /*Alteração da cor do texto dentro da tag a*/
@@ -541,7 +542,7 @@ body:hover #bot4
 
 /*Div que sustenta a imagem do ebook*/
 .ebook {
-  margin-top: -30.8%;
+  margin-top: -33.5%;
   border-radius: 20px;
   width: 20%;
   margin-left: 1000px;
