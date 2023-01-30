@@ -688,7 +688,7 @@ nav ul .bot1 {
   list-style: none;
   width: 32%;
   justify-content: center;
-  margin-left: 470px;
+  margin-left: 510px;
   padding: 20px;
   margin-top: -151px;
 }
@@ -734,9 +734,9 @@ nav ul .bot1 {
 
 /*Div que sustenta a imagem do ebook*/
 .ebook {
-  margin-top: -463px;
+  margin-top: -445px;
   border-radius: 20px;
-  width: 21%;
+  width: 20%;
   margin-left: 1050px;
   box-shadow: 25px 15px 10px rgba(0, 0, 0, 0.3),
     15px 10px 10px rgba(0, 0, 0, 0.3);
@@ -762,7 +762,7 @@ nav ul .bot1 {
   background: linear-gradient(to bottom, #e0e0e0, #eeeeee39);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 1220px;
+  margin-left: 1360px;
   background-clip: text;
   width: 10%;
 }
