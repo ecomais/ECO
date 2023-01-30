@@ -235,48 +235,34 @@ nav ul .bot1 {
 
 .card3 {
   margin-top: 120px;
-}
-
-.text3 {
   display: inline-flex;
-  margin-top: 190px;
-  margin-left: -250px;
-  width: 80%;
-  height: 390px;
-  box-shadow: 0 0 50px -10px black !important;
-  background: white;
-}
-
-.papper3 {
-  padding: 28px 20px 0px 50px;
-  background-image: url(../index/Gallery/RETANGULO-ECO-PLUS-1.png);
-  background-position: bottom;
-  background-size: cover;
-}
-
-.papper h4 {
-  width: 100%;
-  font-weight: 600;
-  font-size: 24px;
-  margin-left: -3px;
-  color: #009d00;
-  line-height: 35px;
-}
-
-.papper p {
-  margin-top: 30px;
-  margin-left: 0px;
-  font-weight: 300;
-  font-size: 15px;
-  text-align: justify;
-  word-wrap: break-word;
-  width: 96%;
-}
-
-.card3 .imgage {
   margin-left: 141px;
-  width: 40%;
+  height: 600px;
 }
+.card3 img{
+ height: 90%;
+ z-index: -1;
+}
+
+.papper3{
+ z-index: 1;
+  margin-top: 400px;
+  margin-left: -550px;
+  width: 80%;
+  font-weight: 600;
+  font-size: 14px;
+  background: url(../index/Gallery/RETANGULO-ECO-PLUS-1.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  line-height: 35px;
+  height: 350px;
+}
+
+
+
+
+
 
 /*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/
 .footer {
