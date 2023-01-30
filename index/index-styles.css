@@ -734,10 +734,10 @@ nav ul .bot1 {
 
 /*Div que sustenta a imagem do ebook*/
 .ebook {
-  margin-top: -430px;
+  margin-top: -32.1%;
   border-radius: 20px;
   width: 20%;
-  margin-left: 1050px;
+  margin-left: 1000px;
   box-shadow: 25px 15px 10px rgba(0, 0, 0, 0.3),
     15px 10px 10px rgba(0, 0, 0, 0.3);
 }
