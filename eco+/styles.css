@@ -296,15 +296,15 @@ nav ul .bot1 {
 
 /*Div que abriga a logo da ECO+ no footer*/
 .logoFooter {
-  width: 30%;
-  height: 150px;
+  width: 20%;
+  margin-top: 80px;
   margin-inline: 100px;
 }
 
 /*Alterações da imagem como tamanho e posição dentro da div*/
 .logoFooter img {
-  width: 65%;
-  padding: 80px 0px 0px 0px;
+  width: 100%;
+  
 }
 
 /*Div que sustenta Logo Ecoplus, intel, advantech, microsoft e e-book */
@@ -312,8 +312,11 @@ nav ul .bot1 {
   color: white;
   display: inline-block;
   list-style: none;
-  padding: 20px 560px;
-  margin-top: -150px;
+  width: 32%;
+  justify-content: center;
+  margin-left: 510px;
+  padding: 20px;
+  margin-top: -151px;
 }
 
 /*Lista da barra de navegação acima de "Política de Privacidade"*/
@@ -342,25 +345,27 @@ nav ul .bot1 {
 
 /*Logo da Microsoft*/
 .microsoftLogo {
-  padding: 0px 0px 0px 140px;
+  padding-left: 33%;
 }
 
 /*Logo Intel*/
 .intelLogo {
-  padding: 0px 0px 0px 140px;
+  margin-top: 5%;
+  padding-left: 33%;
 }
 
 /*Logo Advantech*/
-.advantechLogo {
-  padding: 0px 0px 0px 100px;
+.advantechLogo
+{
+  padding-left: 26%;
 }
 
 /*Div que sustenta a imagem do ebook*/
 .ebook {
-  margin-top: -465px;
+  margin-top: -33.5%;
   border-radius: 20px;
-  width: 19%;
-  margin-left: 1050px;
+  width: 20%;
+  margin-left: 1000px;
   box-shadow: 25px 15px 10px rgba(0, 0, 0, 0.3),
     15px 10px 10px rgba(0, 0, 0, 0.3);
 }
@@ -368,8 +373,8 @@ nav ul .bot1 {
 /*Botão para download do ebook*/
 .downloadEbook {
   background-color: #067a0b;
-  width: 300px;
-  margin-top: -10px;
+  width: 100%;
+  margin-top: -2%;
   text-align: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -381,12 +386,12 @@ nav ul .bot1 {
 .marcaDagua {
   margin-top: 200px;
   text-align: center;
-  float: right;
-  font-size: 20px;
-  margin-right: 10px;
+  font-size: 16px;
   background: linear-gradient(to bottom, #e0e0e0, #eeeeee39);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-left: 48%;
   background-clip: text;
-  padding: 2px;
+  width: 10%;
 }
+
