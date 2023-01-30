@@ -734,7 +734,7 @@ nav ul .bot1 {
 
 /*Div que sustenta a imagem do ebook*/
 .ebook {
-  margin-top: -445px;
+  margin-top: -430px;
   border-radius: 20px;
   width: 20%;
   margin-left: 1050px;
@@ -745,7 +745,7 @@ nav ul .bot1 {
 /*Botão para download do ebook*/
 .downloadEbook {
   background-color: #067a0b;
-  width: 300px;
+  width: 100%;
   margin-top: -10px;
   text-align: center;
   border-bottom-left-radius: 20px;
