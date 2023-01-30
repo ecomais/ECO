@@ -1,6 +1,6 @@
 /*Style global*/
 * {
-  font-family: "Roboto";
+  font-family: url(https://fonts.google.com/specimen/Roboto);
   text-decoration: none;
   margin: 0;
   padding: 0;

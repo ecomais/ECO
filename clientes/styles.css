@@ -1,6 +1,6 @@
 /*Style global*/
 *{
-    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-family: url(https://fonts.google.com/specimen/Roboto);
     text-decoration: none; 
     margin: 0;
     padding: 0;
