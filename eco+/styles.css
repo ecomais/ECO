@@ -8,10 +8,9 @@
 }
 
 /* Conteúdo do body */
-body {
-  background-image: url(../index/Gallery/content.png);
-  background-size: contain;
-}
+ body {
+  background-color: #f8f8f8;
+} 
 
 /* Div de cabeçalho */
 .container {
@@ -102,14 +101,17 @@ nav ul .bot1 {
 .card1 {
   width: 100%;
   display: inline-block;
+  background-image: url(../index/Gallery/content.png);
+  background-size: cover;
+  height: 650px;
 }
 
 .text {
   display: inline-flex;
   margin-left: 129px;
   margin-top: 114px;
-  width: 580px;
-  height: 480px;
+  width: 38%;
+  height: 75%;
   box-shadow: 0 0 50px -10px black !important;
   background: white;
 }
@@ -124,7 +126,7 @@ nav ul .bot1 {
 
 .papper h4 {
   width: 100%;
-  font-size: 24px;
+  font-size: 22px;
   margin-left: -3px;
   color: #008d0a;
   line-height: 35px;
@@ -134,23 +136,26 @@ nav ul .bot1 {
 .papper p {
   margin-top: 20px;
   margin-left: -2px;
-  font-weight: 200;
-  font-size: 16.5px;
+  font-weight: 400;
+  font-size: 14px;
   text-align: justify;
 }
 
 .papper ul {
   margin-top: 20px;
+  margin-left: -4px;
   list-style-position: inside;
   display: block;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 40px;
+  font-size: 14px;
 }
 
 .papper h6 {
   margin-top: 50px;
-  font-weight: 200;
-  font-size: 16.5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 .papper ul li::marker {
@@ -159,16 +164,17 @@ nav ul .bot1 {
 }
 
 .image {
-  width: 40%;
+  width: 30%;
   width: 605px;
-  margin-left: 772px;
-  margin-top: -510px;
+  margin-left: 730px;
+  margin-top: -590px;
 }
 
 .card2 {
   width: 100%;
   display: inline-flex;
   margin-top: 100px;
+  background-color: #f8f8f8;
 }
 
 .text2 {
@@ -236,31 +242,55 @@ nav ul .bot1 {
 .card3 {
   margin-top: 120px;
   display: inline-flex;
-  margin-left: 141px;
-  height: 600px;
-}
-.card3 img{
- height: 90%;
- z-index: -1;
+  
+  height: 800px;
+  background-image: url(../index/Gallery/background-invertido.png);
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
+.card3 img{
+ height: 73%;
+ margin-left: 9%;
+}
+
+
 .papper3{
- z-index: 1;
-  margin-top: 400px;
-  margin-left: -550px;
-  width: 80%;
+  margin-top: 425px;
+  margin-left: -51%;
+  width: 68%;
   font-weight: 600;
   font-size: 14px;
   background: url(../index/Gallery/RETANGULO-ECO-PLUS-1.png);
   background-position: bottom left;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   line-height: 35px;
-  height: 350px;
+  height: 43%;
+  box-shadow: 0 0 50px -10px black !important;
 }
 
+.papper3 img
+{
+  margin-top: 2%;
+  margin-left: 26%;
 
+}
 
+.papper3 p
+{
+  width: 90%;
+  text-align: justify;
+  font-size: 13px;
+  font-weight: 200;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.text4 img
+{
+  margin: 0 auto;
+}
 
 
 
@@ -290,7 +320,7 @@ nav ul .bot1 {
 /*Alterações da imagem como tamanho e posição dentro da div*/
 .logoFooter img {
   width: 100%;
-  
+
 }
 
 /*Div que sustenta Logo Ecoplus, intel, advantech, microsoft e e-book */
