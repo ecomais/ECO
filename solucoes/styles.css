@@ -196,12 +196,13 @@ nav ul .bot1
  
  /*Div que sustenta a imagem do ebook*/
  .ebook {
-   margin-top: -32.4%;
+   margin-top: -30.8%;
    border-radius: 20px;
    width: 20%;
    margin-left: 1000px;
    box-shadow: 25px 15px 10px rgba(0, 0, 0, 0.3),
      15px 10px 10px rgba(0, 0, 0, 0.3);
+   position: static;
  }
  
  /*Botão para download do ebook*/
