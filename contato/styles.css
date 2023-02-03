@@ -160,6 +160,32 @@ nav ul .bot1
   font-size: 25px;
 }
 
+/*Select style*/
+.cargsel {
+  margin-top: 16px;
+  margin-left: 10px;
+  height: 40px;
+  width: 75%;
+  border-radius: 8px;
+  text-align: left;
+  color: #757575;
+}
+input {
+  margin-top: 16px;
+  margin-left: 10px;
+  width: 75%;
+  height: 38px;
+  border-color: #b7b7b7;
+  border-radius: 8px;
+  border-width: 1pt;
+  text-align: left;
+}
+/*Opções do SELECT*/
+.cargsel option {
+  color: black;
+  text-align: left;
+}
+
 .card2
 {
   margin-top: 10%;
