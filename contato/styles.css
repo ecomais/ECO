@@ -114,11 +114,10 @@ nav ul .bot1
 
 .card1{
   position: relative;
-  background-image: url(../index/Gallery/background-invertido.png);
-  background-position: 40%;
-
+  background-image: url(../index/Gallery/fundo-normal.png);
+  background-position: top;
   padding-bottom: 3%;
-  height: 600px;
+  height: 800px;
 }
 
 .text1
@@ -130,7 +129,7 @@ nav ul .bot1
   background-repeat: no-repeat;
   margin-left: 8.5%;
   position: relative;
-  height: 600px;
+  height: 800px;
   width: 50%;
   background-color: #f8f8f8;
   box-shadow: 0 0 50px -10px black !important;
@@ -148,7 +147,7 @@ nav ul .bot1
 
 .text1 p
 {
-  margin-top: 7%;
+  margin-top: 5%;
   font-size: 16pt;
   text-align: center;
   color: #009d00;
@@ -162,94 +161,202 @@ nav ul .bot1
 
 /*Select style*/
 .cargsel {
-  margin-top: 16px;
-  margin-left: 10px;
+  margin-top: 5%;
+  margin-left: 7%;
   height: 40px;
-  width: 75%;
+  width: 85%;
   border-radius: 8px;
-  text-align: left;
+  text-align: center;
   color: #757575;
 }
-input {
-  margin-top: 16px;
-  margin-left: 10px;
-  width: 75%;
-  height: 38px;
+
+input 
+{
+  margin-top: 5%;
+  margin-left: 7%;
+  width: 85%;
+  height: 5%;
   border-color: #b7b7b7;
   border-radius: 8px;
   border-width: 1pt;
-  text-align: left;
+  text-align: center;
+}
+
+.mensagem{
+  margin-top: 30px;
+  margin-left: 7%;
+  width: 85%;
+  border-color: #b7b7b7;
+  border-radius: 8px;
+  border-width: 1pt;
+  text-align: center;
+}
+
+.mensagem textarea
+{
+  width: 100%;
+  border-radius: 8px;
+  padding-top: 2%;
+  padding-left: 2%;
+  text-align: justify;
+}
+.mensagem textarea::placeholder
+{
+  font-size: 15px;
 }
 /*Opções do SELECT*/
 .cargsel option {
   color: black;
-  text-align: left;
+  text-align: center;
 }
 
-.card2
-{
-  margin-top: 10%;
-  padding-bottom: 2%;
+/* Botão "Saiba Mais" */
+#bot3 {
+  transition: 1s;
+  padding: 1.5% 11%;
+  margin: 7%;
+  margin-left: 32%;
+  background-color: #008000;
+  border-radius: 50px;
+  border: none;
+  color: white;
 }
 
-.card2 img
+#bot3 a
 {
-  margin-left: 23%;
+  color: white;
+}
+
+/* Estilização de transição do bot3 */
+#bot3:hover  {
+  box-shadow: 0 0 10px #4dc44d, 0 0 10px black, 0 0 10px black;
+  background-color: #00b00c;
+}
+
+
+.card2{
+  position: relative;
+  background-image: url(../index/Gallery/fundo-normal.png);
+  background-position: top 20%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  height: 890px;
 }
 
 .text2
 {
+  display: inline-block;
   background: url(../index/Gallery/RETANGULO-ECO-PLUS-1.png);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: 9%;
   position: relative;
-  height: 550px;
-  width: 69%;
-  margin-top: -9%;
+  margin-left: 40%;
+  height: 800px;
+  width: 50%;
   background-color: #f8f8f8;
-  z-index: 3;
   box-shadow: 0 0 50px -10px black !important;
 }
 
-.text2 h3
+.text2 h1
 {
-  padding-top: 4%;
-  margin-left: 5%;
+  margin-top: 8%;
   width: 90%;
-  color: #009d00;
-  line-height: 40px;
-  text-align: justify;
-  font-size: 18pt;
-  font-weight: 900;
+  margin-left: 5%;
+  text-align: center;
+  font-size: 32pt;
+  color: #008100;
 }
 
 .text2 p
 {
-  margin-top: 2.5%;
-  margin-left: 5%;
-  width: 90%;
-  line-height: 30px;
+  margin-top: 5%;
+  font-size: 12pt;
+  text-align: center;
+  
+}
+
+.arquivo
+{
+  margin-top: 6%;
+  margin-left: 30%;
+
+}
+
+/*Select style*/
+.cargsel2 {
+  margin-top: 5%;
+  margin-left: 7%;
+  height: 40px;
+  width: 85%;
+  border-radius: 8px;
+  text-align: center;
+  color: #757575;
+}
+
+input 
+{
+  margin-top: 5%;
+  margin-left: 7%;
+  width: 85%;
+  height: 4.5%;
+  border-color: #b7b7b7;
+  border-radius: 8px;
+  border-width: 1pt;
+  text-align: center;
+}
+
+.mensagem2{
+  margin-top: 30px;
+  margin-left: 7%;
+  width: 85%;
+  border-color: #b7b7b7;
+  border-radius: 8px;
+  border-width: 1pt;
+  text-align: center;
+}
+
+.mensagem2 textarea
+{
+  width: 100%;
+  border-radius: 8px;
+  padding-top: 2%;
+  padding-left: 2%;
   text-align: justify;
+}
+.mensagem2 textarea::placeholder
+{
   font-size: 15px;
 }
-
-.text2 ul
-{
-  list-style-position: inside;
-  width: 90%;
-  text-align: justify;
-  margin-top: 4%;
-  line-height: 30px;
-  margin-left: 5%;
+/*Opções do SELECT*/
+.cargsel2 option {
+  color: black;
+  text-align: center;
 }
 
-.text2 li::marker
-{
-  font-size: 15px;
+/* Botão "Saiba Mais" */
+#bot4 {
+  transition: 1s;
+  padding: 1.5% 11%;
+  margin: 7%;
+  margin-left: 32%;
+  background-color: #008000;
+  border-radius: 50px;
+  border: none;
+  color: white;
 }
 
+#bot4 a
+{
+  color: white;
+}
+
+/* Estilização de transição do bot3 */
+#bot4:hover  {
+  box-shadow: 0 0 10px #4dc44d, 0 0 10px black, 0 0 10px black;
+  background-color: #00b00c;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
 /*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/
 .footer {
    border-top: 5px solid;
@@ -259,6 +366,7 @@ input {
    background-color: #383838;
    display: inline-block;
    height: 500px;
+  
  }
  
  /*Alteração da cor do texto dentro da tag a*/
