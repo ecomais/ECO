@@ -466,7 +466,6 @@ body:hover #bot4
   background-color: #383838;
   display: inline-block;
   height: 500px;
-  margin-top: 80px;
 }
 
 /*Alteração da cor do texto dentro da tag a*/
@@ -494,7 +493,7 @@ body:hover #bot4
   list-style: none;
   width: 32%;
   justify-content: center;
-  margin-left: 510px;
+  margin-left: 35%;
   padding: 20px;
   margin-top: -151px;
 }
@@ -542,10 +541,11 @@ body:hover #bot4
 
 /*Div que sustenta a imagem do ebook*/
 .ebook {
-  margin-top: -30.8%;
-  border-radius: 20px;
+  margin-top: -30.4%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   width: 20%;
-  margin-left: 1000px;
+  margin-left: 73%;
   box-shadow: 25px 15px 10px rgba(0, 0, 0, 0.3),
     15px 10px 10px rgba(0, 0, 0, 0.3);
   position: static;
