@@ -17,6 +17,13 @@ body {
   background-color: #f8f8f8;
 }
 
+/* styles for screens with a maximum width of 600px */
+@media (max-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 /* Div de cabeçalho */
 .container {
   margin: 0 auto;
