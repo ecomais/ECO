@@ -334,35 +334,6 @@ nav ul .bot1 {
 }
 
 
-/*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/
-.footer {
-  border-top: 5px solid;
-  /* adjust the width as needed */
-  border-image: linear-gradient(to right, #000000, #17b317);
-  border-image-slice: 1;
-  background-color: #383838;
-  display: inline-block;
-  height: 500px;
-}
-
-/*Alteração da cor do texto dentro da tag a*/
-.footer a {
-  color: white;
-}
-
-/*Div que abriga a logo da ECO+ no footer*/
-.logoFooter {
-  width: 20%;
-  margin-top: 80px;
-  margin-inline: 100px;
-}
-
-/*Alterações da imagem como tamanho e posição dentro da div*/
-.logoFooter img {
-  width: 100%;
-
-}
-
 /*Div que sustenta Logo Ecoplus, intel, advantech, microsoft e e-book */
 .footerNav {
   color: white;
@@ -370,7 +341,7 @@ nav ul .bot1 {
   list-style: none;
   width: 32%;
   justify-content: center;
-  margin-left: 510px;
+  margin-left: 35%;
   padding: 20px;
   margin-top: -151px;
 }
@@ -418,13 +389,14 @@ nav ul .bot1 {
 
 /*Div que sustenta a imagem do ebook*/
 .ebook {
-  margin-top: -32.55%;
-  border-radius: 20px;
+  margin-top: -30.4%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   width: 20%;
-  margin-left: 1000px;
+  margin-left: 73%;
   box-shadow: 25px 15px 10px rgba(0, 0, 0, 0.3),
     15px 10px 10px rgba(0, 0, 0, 0.3);
-    position: relative;
+  position: static;
 }
 
 /*Botão para download do ebook*/
