@@ -9,20 +9,30 @@
 
 }
 
+
+@media only screen and (min-device-width:600px) and (max-device-width:1968px) {
+  body {
+    background-image: url(Gallery/background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+  }
+}
+
 /* Conteúdo do body */
-body {
+/* body {
   background-image: url(Gallery/background.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #f8f8f8;
-}
+} */
 
 /* styles for screens with a maximum width of 600px */
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   body {
     font-size: 14px;
   }
-}
+} */
 
 /* Div de cabeçalho */
 .container {
