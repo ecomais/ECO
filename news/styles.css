@@ -10,7 +10,10 @@
 
 
 /* Conteúdo do body */
-
+body
+{
+  background-color: #f0f0f059;
+}
 
 /* Div de cabeçalho */
 .container
