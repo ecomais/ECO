@@ -111,7 +111,205 @@ nav ul .bot1
     border-radius: 30px;
     background-color: #06BC10;
 }
+/*-------------------------------------------------------------------------------------------------------*/
+.sectionDados
+{
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 
+.conteudo
+{
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 2%;
+}
+
+.sectionDados .tituloDados
+{
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.tituloDados
+{
+  display: flex;
+  justify-content: center;
+}
+
+.tituloDados p
+{
+  font-size: 48pt;
+  line-height: 5rem;
+  font-weight: 500;
+  text-align: justify;
+  padding: 0px 47px;
+}
+
+.conteudo
+{
+ align-items: center;
+}
+.imagemDados
+{
+  margin-top: 7%;
+  width: 58.6%;
+}
+
+.subtitulo
+{
+  right: 50%;
+}
+
+
+
+.artigo
+{
+  display: inline-block;
+  text-align: justify;
+}
+.artigo h4
+{
+  margin-top: 5%;
+}
+
+.artigo #textoPartes
+{
+  position: relative;
+  line-height: 40px;
+  margin-top: 3%;
+}
+
+.artigo #bannerDados
+{
+  display: block;
+  margin: 0 auto;
+  width: 49%;
+  margin-top: 3%;
+}
+.artigo #bannerDados2
+{
+  display: block;
+  margin: 0 auto;
+  width: 49%;
+  margin-top: 3%;
+}
+
+.artigo #bannerDados3
+{
+  display: block;
+  margin: 0 auto;
+  width: 49%;
+  margin-top: 3%;
+}
+
+
+/* .artigo ol
+{
+  margin-top: 2%;
+  line-height: 45px;
+  color: #008000;
+  list-style-position: inside;
+  margin-left: 2%;
+  text-align: justify;
+} */
+
+.artigo #eVoce
+{
+  margin-top: 2%;
+}
+
+.artigos
+{
+  background-color: #f8f8f8;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3%;
+  height: 830px;
+}
+
+.artigos h3
+{
+  color: #06BC10;
+  padding-bottom: 2%;
+  margin-left: 9.5%;
+  font-size: 25pt;
+}
+.artigosRelacionados {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2%;
+  width: 83%;
+  margin: 0 auto;
+}
+
+
+.coluna1, .coluna2, .coluna3
+{
+  width: 80%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+}
+.coluna1 img, .coluna2 img, .coluna3 img
+{
+  max-width: 100%;
+}
+
+.coluna1 p, .coluna2 p, .coluna3 p
+{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.coluna1 h1 a, .coluna2 h1 a, .coluna3 h1 a
+{
+  font-size: 27px;
+  line-height: 40px;
+  color: #06BC10;
+}
+
+.coluna1 button 
+{
+  width: 45%;
+  background-color: #008d0a;
+  border: none;
+  margin-top:20%;
+  height: 8%;
+  border-radius: 40px;
+}
+
+.coluna2 button {
+  width: 45%;
+  background-color: #008d0a;
+  border: none;
+  margin-top:28.8%;
+  height: 8%;
+  border-radius: 40px;
+}
+
+.coluna3 button 
+{
+  width: 45%;
+  background-color: #008d0a;
+  border: none;
+  margin-top:37.75%;
+  height: 8%;
+  border-radius: 40px;
+}
+
+.coluna1 a, .coluna2 a, .coluna3 a
+{
+  color: white;
+}
+/*--------------------------------------------------------------------------------------------------------*/
 /*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/
 .footer {
   border-top: 5px solid;

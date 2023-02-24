@@ -111,7 +111,111 @@ nav ul .bot1
     border-radius: 30px;
     background-color: #06BC10;
 }
+/*--------------------------------------------------------------------------------------------------------------------*/
+.artigo #vejaASeguir
+{
+  margin-top: 2%;
+}
+.artigo ol
+{
+  margin-top: 2%;
+  line-height: 45px;
+  color: #008000;
+  list-style-position: inside;
+  margin-left: 2%;
+  text-align: justify;
+}
 
+.artigo #emSuma
+{
+  margin-top: 2%;
+}
+
+.artigos
+{
+  background-color: #f8f8f8;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3%;
+  height: 830px;
+}
+
+.artigos h3
+{
+  color: #06BC10;
+  padding-bottom: 2%;
+  margin-left: 9.5%;
+  font-size: 25pt;
+}
+.artigosRelacionados {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2%;
+  width: 83%;
+  margin: 0 auto;
+}
+
+
+.coluna1, .coluna2, .coluna3
+{
+  width: 80%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+}
+.coluna1 img, .coluna2 img, .coluna3 img
+{
+  max-width: 100%;
+}
+
+.coluna1 p, .coluna2 p, .coluna3 p
+{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.coluna1 h1 a, .coluna2 h1 a, .coluna3 h1 a
+{
+  font-size: 27px;
+  line-height: 40px;
+  color: #06BC10;
+}
+
+.coluna1 button 
+{
+  width: 45%;
+  background-color: #008d0a;
+  border: none;
+  margin-top:20%;
+  height: 8%;
+  border-radius: 40px;
+}
+
+.coluna2 button {
+  width: 45%;
+  background-color: #008d0a;
+  border: none;
+  margin-top:28.8%;
+  height: 8%;
+  border-radius: 40px;
+}
+
+.coluna3 button 
+{
+  width: 45%;
+  background-color: #008d0a;
+  border: none;
+  margin-top:37.75%;
+  height: 8%;
+  border-radius: 40px;
+}
+
+.coluna1 a, .coluna2 a, .coluna3 a
+{
+  color: white;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
 /*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/
 .footer {
   border-top: 5px solid;

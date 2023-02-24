@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Clientes - ECO+</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,10 +35,144 @@
     </nav>
     </div>
 
+    <section class="sectionDados">
+        <section class="conteudo">
+            <div class="tituloDados">
+                <p>Segurança de Dados: Como a internet industrial (IIoT) aborda a integridade da sua informação?</p>
+            </div>
+            <div class="imagemDados"><img src="../../../index/Gallery/imagemnews11.png" alt="Símbolo com Cadeado"></div>
+            <article class="artigo">
+                <h4>Por: Anderson Fontes - Engenheiro de Aplicação</h4>
+                <p id="textoPartes">
+                    Seja no mundo real ou digital, nossa segurança e integridade costuma sempre ser uma das maiores
+                    prioridades na tomada de decisões. Em que cidade ou bairro morar, o melhor momento para se ter um
+                    filho, a mudança para um outro país ou a empreitada de abrir um empreendimento próprio… São esses,
+                    entre muitos outros, momentos decisivos que estamos propensos a experienciar em nossas vidas e que
+                    são geralmente muito bem pensados e analisados antes de uma tomada de ação definitiva.
+                </p>
+                <img src="../../../index/Gallery/seguranca-de-dados-eco1.jpg" alt="Banner Rust" id="bannerDados">
+                <p id="textoPartes">
+                    Agora proponho que você faça uma autoanálise: o quanto você preza pela sua segurança digital? Seja
+                    por utilizar senhas complexas, autenticação por dois fatores, aplicativos gerenciadores de senhas
+                    encriptadas, etc. Os métodos são diversos e abrangem diversas necessidades de segurança; e quando se
+                    fala de <strong>segurança de dados</strong> industrial os riscos são ainda mais críticos e o
+                    tratamento precisa ser
+                    mais criterioso. Levando isso em consideração, irei abordar brevemente duas práticas complementares
+                    que podem ser utilizadas na indústria para aumentar a robustez na segurança da sua internet
+                    industrial; sendo elas a escolha de um <strong>protocolo IIoT</strong> adequado para comunicação
+                    entre
+                    dispositivos/nuvem e os benefícios de uma <strong>conexão VPN</strong> no chão de fábrica.
 
+                    <strong>Protocolos de comunicação industrial</strong> Embora muito confiáveis em redes fechadas, a
+                    grande maioria de
+                    protocolos industriais não está preparada para transmitir dados pela internet. Para isso, temos
+                    diversos outros protocolos que possuem robustez para operar em uma linha fabril, assim como
+                    segurança na hora de transmitir dados para outras redes. Podemos citar, por exemplo, os protocolos
+                    <strong>MQTT</strong>, <strong>AMQP</strong>, <strong>REST</strong> e <strong>OPC UA</strong>.
+                </p>
+                <img src="../../../index/Gallery/seguranca-de-dados-eco2.jpg" alt="Comparação de métodos de segurança"
+                    id="bannerDados2">
+                <p id="textoPartes">Os protocolos <strong>MQTT</strong>e <strong>AMQP</strong> são muito leves e facilitam a conexão entre dois
+                    dispositivos ou entre API (interface de programação de aplicações) e equipamento a partir de um
+                    servidor intermediário, o <em>broker</em>. Estes protocolos funcionam a partir de um sistema
+                    <em>publisher/subscriber</em>, ou seja, o dispositivo em uma ponta “publica” informações para o <em>broker</em> com os
+                    dados e um “tópico” no qual o dispositivo em outra ponta precisa se “inscrever” para receber essas
+                    informações. Esse método permite que qualquer dispositivo transmita dados e comandos para qualquer
+                    ponta, por fim facilitando o controle de um sistema descentralizado a assíncrono seja comunicando
+                    com uma API ou M2M (de máquina para máquina).</p>
+                <p id="textoPartes">O protocolo<strong> OPC UA</strong> <em>(OPC Unified Architecture)</em>, diferentemente dos citados
+                    anteriormente, foi projetado desde o início como um protocolo industrial, o que o garante um grande
+                    foco na disponibilidade, integridade e confidencialidade dos dados na comunicação entre máquinas.
+                    Por conta disso, o protocolo já possui criptografia nativa a partir de certificados instalados tanto
+                    no <em>server</em> quanto em seus <em>clients</em>, o que valida a comunicação somente em dispositivos credenciados. O
+                    OPC UA também possui arquitetura voltada a serviço (SOA), permitindo assim fácil conectividade com
+                    APIs e as mais variadas linguagens de programação, incluindo C++, Python e JavaScript.</p>
+                <p id="textoPartes">O <strong>REST</strong> <em>(Representational State Transfer)</em> não é exatamente um protocolo, mas sim um
+                    modelo de arquitetura que opera sobre o protocolo HTTP. O modelo permite o envio de dados e comandos
+                    através de uma interface Web, o que o garante ser uma ótima ferramenta quando envolve aplicação
+                    voltadas para <em>web services</em>, principalmente para TI. Em âmbito industrial, o modelo pode ser
+                    utilizado principalmente para telemetria e comunicação direta com a nuvem, principalmente devido ao
+                    fato do modelo operar de forma descentralizada e ser acessível a qualquer sistema que tenha suporte
+                    ao protocolo HTTP.</p>
+                <p id="textoPartes"><strong>Conectividade VPN</strong></p>
+                <p>Enfim, chegamos ao ponto em que especialistas de Automação não irão mais ser barrados por portas de
+                    rede bloqueadas e a equipe de TI não precisará mais abrir regras de entrada/saída suspeitas na rede.
+                    Finalmente esses dois times podem dar as mãos e trabalhar em harmonia, com o uso de redes privadas
+                    em túnel.</p>
+                <p id="textoPartes">O <strong>VPN</strong> <em>(Virtual Private Network)</em> nada mais é do que um serviço intermediário de rede
+                    que recebe pacotes de dados e os transmite por uma rede complexa de um ou mais servidores hospedados
+                    em um ou mais países, o que garante grande dificuldade no rastreamento dessas informações (IPs de
+                    origem e destino, por exemplo) e diferentes graus de criptografia aplicados às mensagens enviadas
+                    utilizando o serviço. Por conta disso, a conectvidade VPN ganhou grande popularidade, principalmente
+                    nos últimos anos, referente à segurança digital e sigilo de informações em ambiente doméstico.</p>
+                    <img src="../../../index/Gallery/seguranca-de-dados-eco3.jpg" alt="Demonstração de VPN" id="bannerDados3">
+                <p id="textoPartes">
+                    A segurança é um fator crítico em sistemas de baixo nível, e Rust oferece uma segurança garantida em
+                    tempo de compilação, detectando e corrigindo automaticamente erros de memória comuns. Além disso,
+                    Rust
+                    tem uma sintaxe simples e intuitiva e uma documentação completa e bem escrita.
+                </p>
+                <p id="textoPartes">A maior faceta do VPN em âmbito industrial é a de permitir a conexão direta de um
+                    dispositivo com uma rede na qual ele não está conectado fisicamente. Isso somado ao fato dos dados
+                    serem criptografados durante toda a transmissão, garante uma conexão que além de segura, garante
+                    escalabilidade do uso de informações e comunicação com a nuvem sem sacrificar a estrutura de rede
+                    industrial atual da planta fabril.</p>
+                <p id="textoPartes">Resumindo, o que uma estrutura VPN nos proporciona é uma ponte exclusiva entre dois
+                    ou mais dispositivos em redes diferentes, sejam eles CLPs, gateways, computadores (industriais ou
+                    não), smartphones e até com a nuvem, com seu foco principal na segurança e integridade dos dados.
+                </p>
+                <p id="textoPartes"><strong>E isso é somente o início</strong></p>
+                <p id="textoPartes">Claro, esses são apenas alguns dos tópicos encontrados quando falamos sobre
+                    <strong>Indústria 4.0</strong>, e não é algo recente, até porque alguns tipos de VPN e protocolos usados em meio IIoT
+                    já existem há mais de 20 anos! Porém, o que podemos enxergar agora é o quanto essas tecnologias se
+                    tornaram importantes soluções também em chão de fábrica e o quão seguras e robustas elas estão após
+                    anos de avanços em segurança de dados. São esses tipos de ferramentas e pensamentos que podem nos
+                    auxiliar, facilitar e principalmente baratear o custo de implementação de uma solução 4.0 na
+                    indústria no menor tempo possível e com o trabalho conjunto de especialistas das mais variadas áreas
+                    em prol de uma solução que facilite a tomada de decisões a partir da dados confiáveis.</p>
+                <p id="eVoce">E você, está esperando o que para digitalizar sua linha de produção e dar um passo rumo à
+                    Indústria 4.0? Agende uma conferência conosco e veja nossos cases de sucesso!</p>
+            </article>
+        </section>
+    </section>
+
+    <section class="artigos">
+        <h3>Artigos Relacionados</h3>
+        <div class="artigosRelacionados">
+            <div class="coluna1"><img src="../../../index/Gallery/imagemnews11.png" alt="Segurança da informação">
+                <p>20 de setembro de 2022</p>
+                <h1>
+                    <a href="../seguranca-de-dados/seguranca.html" rel="next" target="_self">Dados, informação,
+                        conhecimento
+                        e sabedoria: em qual nível da pirâmide do conhecimento
+                        você
+                        está?</a>
+                </h1>
+                <button><i></i><a href="../dados/dados.html" rel="next" target="self">Leia Mais</a></button>
+            </div>
+            <div class="coluna2"><img src="../../../index/Gallery/imagemnews2.png" alt="Switches Gerenciáveis">
+                <p>20 de setembro de 2022</p>
+                <h1>
+                    <a href="../exemplo-de-aplicação/exemploDeA.html" rel="next" target="_self">Exemplo de Aplicação:
+                        VLANs
+                        em Switches Gerenciáveis</a>
+                </h1>
+                <button><i></i><a href="../exemplo-de-aplicação/exemploDeA.html" rel="next" target="_self">Leia
+                        Mais</a></button>
+            </div>
+            <div class="coluna3"><img src="../../../index/Gallery/imagemnews1.png" alt="Celular com Símbolo wi-fi 5G">
+                <p>20 de setembro de 2022</p>
+                <h1><a href="../internet-5g-e-agora/internet5g.html" rel="next" target="_self">Internet 5G: e agora?</a>
+                </h1>
+                <button><i></i><a href="../internet-5g-e-agora/internet5g.html" rel="next" target="_self">Leia
+                        Mais</a></button>
+            </div>
+        </div>
+    </section>
 
     <div class="footer">
-        <div class="logoFooter"><img src="../../../index/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus" width="15%">
+        <div class="logoFooter"><img src="../../../index/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus"
+                width="15%">
         </div>
         <div class="footerNav">
             <ul>
@@ -71,7 +205,8 @@
             <div class="microsoftLogo"><img src="../../../index/Gallery/logo-Microsoft-Partner.png"
                     alt="logo-Microsoft-Partner" width="45%"></div>
             <div class="intelLogo"><img src="../../../index/Gallery/intel.png" alt="intel-logo" width="45%"></div>
-            <div class="advantechLogo"><img src="../../../index/Gallery/advantech.png" alt="Advantech-logo" width="60%"></div>
+            <div class="advantechLogo"><img src="../../../index/Gallery/advantech.png" alt="Advantech-logo" width="60%">
+            </div>
         </div>
         <div class="ebook">
             <img src="../../../index/Gallery/iot.png" alt="E-book" width="100%">
