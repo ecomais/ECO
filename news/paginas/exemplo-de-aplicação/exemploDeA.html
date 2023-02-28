@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Clientes - ECO+</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,123 @@
     </div>
     </nav>
     </div>
-
+    <div class="tituloExemploApli">
+        <p>Exemplo de Aplicação: VLANs em</p>
+        <p>Switches Gerenciáveis</p>
+    </div>
+    <section class="sectionExemploApli">
+        <section class="conteudo">
+            <div class="imagemExemploApli"><img src="../../../index/Gallery/imagemnews2.png" alt="Símbolo com Cadeado"></div>
+            <article class="artigo">
+                <h4>Por: Cleiton Santos - Especialista de Produtos</h4>
+                <p id="textoPartes">
+                    Um dos requisitos mais solicitados em soluções que exigem switches gerenciáveis é o uso de <strong>
+                        VLAN
+                        <i>(Virtual Local Area Network)</i>
+                    </strong> - também conhecido como: IEEE 802.1Q. Há diversos motivos que
+                    corroboram sua implementação, entre eles estão a segurança da rede local, segregação do tráfego,
+                    priorização dos pacotes transitando na rede, entre outros. Logo, uma VLAN consiste em um grupo de
+                    participantes de um segmento da rede que podem se comunicar entre si como se pertencessem a uma LAN
+                    separada/independente.
+                </p>
+                <p id="textoPartes">Conceitualmente, uma VLAN fornece segmentação de rede na camada de enlace de
+                    dados (camada 2 do modelo ISO/OSI). A segmentação é obtida adicionando aos frames Ethernet
+                    identificadores conhecidos como “tag de VLAN” (vide Figura 1). Dessa forma, as portas dos switches
+                    gerenciáveis são configuradas para serem associadas (ou não) a uma determinada marcação (“tag”) de
+                    VLAN. Sendo assim, o tráfego da VLAN será enviado somente às portas participantes desta rede
+                    virtual.</p>
+                <img src="../../../index/Gallery/frame-ethernet.png" alt="Banner frame-ethernet" id="bannerFrame">
+                <p id="textoPartes">
+                    Sabe-se que diversos protocolos industriais e/ou conjunto de funcionalidades utilizam deste
+                    conceito, entre eles: GOOSE, RSTP, MSTP, MRP, TSN, QoS, entre outros; logo, nota-se que o conceito
+                    de VLAN é muito utilizado tanto diretamente, quanto indiretamente nas soluções de redes Ethernet e,
+                    por consequência, há uma relevância considerável por utilizar equipamentos que suportam tal
+                    funcionalidade, como, por exemplo, <strong>switches gerenciáveis</strong>.
+                </p>
+                <p id="textoPartes">Apesar de que, em um primeiro momento, sua compreensão e configuração possa assustar
+                    alguns usuários, sua implementação nos equipamentos HIRSCHMANN é extremamente fácil. Portanto, de
+                    forma a elucidar o presente conceito, tomemos como exemplo o seguinte caso:</p>
+                <img src="../../../index/Gallery/vlans-eco-imagem.png" alt="Comparação de métodos de segurança"
+                    id="bannerVLan">
+                <p id="textoPartes">Como pode ser observado na Figura 2, há três diferentes VLANs e dois switches
+                    gerenciáveis neste exemplo, onde
+                </p>
+                <ul>
+                    <li><strong>VLAN 1:</strong> responsável por conectar a estação de gerenciamento à ambos os
+                        switches, assim como a comunicação entre switches via porta #5 (equipamento da esquerda) e porta
+                        #1 (equipamento da direita);
+                        industriais, como controle de temperatura, pressão e umidade;</li>
+                    <li><strong>VLAN 2:</strong> responsável por interligar os dispositivos identificados como “A”, “D”,
+                        “E” e “G”, sendo os dois primeiros conectados no switch da esquerda e os dois últimos conectados
+                        no switch da direita;
+                        dispositivos industriais, como PLCs, sensores e atuadores;</li>
+                    <li><strong>VLAN 3:</strong> responsável por interligar os dispositivos identificados como “B” e “C”
+                        (conectados no switch à esquerda) e, “F” e “H” (conectados no switch à direita.
+                </ul>
+                <p id="textoPartes">Vale salientar que, neste exemplo, os equipamentos “A” e “D” não conversam com os
+                    equipamentos “B” e “C”, apesar de todos estarem conectados no mesmo switch, ou seja, os mesmos estão
+                    virtualmente segregados. A mesma premissa é válida para o switch da direita, onde os equipamentos
+                    “E” e “G” não se comunicam com os equipamentos “F” e “H”.</p>
+                <p id="textoPartes">Logo, uma das formas mais simples de compreender, solucionar e implementar essa
+                    problemática seria por meio da criação das tabelas de ingresso e egresso para ambos os equipamentos
+                    (switches). Em suma:</p>
+                <ul>
+                    <li><strong>Tabela de ingresso:</strong> especifica qual ID de VLAN será atribuído aos pacotes que
+                        estão chegando;</li>
+                    <li><strong>Tabela de egresso:</strong> especifica por quais portas o dispositivo pode enviar os
+                        pacotes desta VLAN; opções:</li>
+                    <li><strong>“U” (untagged):</strong> a porta é membro da VLAN e, portanto, transmite os pacotes de
+                        dados, porém sem a “tag” de VLAN; normalmente, essa opção é utilizada quando o dispositivo
+                        conectado nesta porta não compreende a “tag” de VLAN (ex.: computadores comuns);</li>
+                    <li><strong>“T” (tagged):</strong> a porta é membro da VLAN e, neste caso, transmite os pacotes de
+                        dados com a “tag” de VLAN; normalmente, com o intuito de manter a “tag” original, essa opção é
+                        utilizada nos uplinks entre equipamentos de rede;</li>
+                    <li><strong>“F” (forbidden):</strong> a porta não é membro da VLAN e, portanto, não transmite
+                        pacotes de dados desta VLAN; além disso, o dispositivo impede que a porta se torne um membro da
+                        VLAN por meio da função MVRP (Multiple VLAN Registration Protocol);</li>
+                    <li><strong>“ – ” (not a member): </strong> a porta não é membro da VLAN e, portanto, não transmite
+                        pacotes de dados da VLAN.</li>
+                </ul>
+                <p id="textoPartes">Além destas opções, na HIRSCHMANN, os equipamentos contam ainda com verificações
+                    adicionais visando a segurança da rede, as quais podem ser definidas pelo usuário na tabela de
+                    ingresso. Tais opções seriam:</p>
+                <ul>
+                    <li><strong>Admitir todos:</strong> a porta aceita pacotes de dados com e sem a “tag” de VLAN.</li>
+                    <li><strong>Admitir somente pacotes com “tag” de VLAN:</strong> a porta somente aceita pacotes de
+                        dados com “tag” de VLAN;</li>
+                    <li><strong>Ingress filtering (ativo):</strong> ao dispositivo compara o ID da VLAN no pacote de
+                        dados com as VLANs das quais o dispositivo é membro; se o ID da VLAN no pacote de dados
+                        corresponder a uma dessas VLANs, a porta transmitirá o pacote de dados; caso contrário, o
+                        dispositivo descartará o pacote de dados.</li>
+                </ul>
+                <p>Logo, uma das possíveis soluções de configuração para o exemplo ilustrado na Figura 2 é apresentado
+                    na Tabela 1. Note que, para facilitar, as tabelas de ingresso e egresso de cada switch foram
+                    compactadas e exibidas em apenas um quadro.</p>
+                <img src="../../../index/Gallery/tabela-1-eco.png" alt="Tabela de switch" id="bannerSwitch">
+                <p id="textoPartes">
+                    Em suma, o artigo de hoje teve por objetivo apresentar brevemente o conceito de VLANs e exemplificar
+                    seu uso com um case de aplicação. Portanto, o presente artigo visa auxiliar os clientes e parceiros
+                    na compreensão e implementação de VLANs em seus projetos de redes Ethernet industriais.
+                </p>
+                <p id="textoPartes"><strong>
+                    Obs. 1: nos equipamentos HIRSCHMANN, as tabelas apresentadas acima são encontradas
+                        nos seguintes menus: tabela de egresso [Switching à VLAN à Configuration]; tabela de ingresso
+                        [Switching à VLAN à Port];
+                </strong></p>
+                <p id="textoPartes"><strong>
+                    Obs. 2: como a visualização do conceito de VLAN é muito abstrato, sugere-se o uso do
+                        software Industrial HiVision para apresentação visual dos equipamentos relacionados com uma
+                        determinada VLAN (tema este para um outro artigo técnico!).
+                </strong>
+                </p>
+                <p id="textoPartes"><strong>Referências:</strong></p>
+                <ol>
+                    <li>Hirschmann User Manual Basic Configuration HiOS-2S GRS, 2015.</li>
+                    <li>Hirschmann Reference Manual Graphical User Interface HiOS-2S GRS (Greyhound Switch), 2017.</li>
+                </ol>
+            </article>
+        </section>
+    </section>
     <section class="artigos">
         <h3>Artigos Relacionados</h3>
         <div class="artigosRelacionados">
@@ -71,7 +187,8 @@
 
 
     <div class="footer">
-        <div class="logoFooter"><img src="../../../index/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus" width="15%">
+        <div class="logoFooter"><img src="../../../index/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus"
+                width="15%">
         </div>
         <div class="footerNav">
             <ul>
@@ -104,7 +221,8 @@
             <div class="microsoftLogo"><img src="../../../index/Gallery/logo-Microsoft-Partner.png"
                     alt="logo-Microsoft-Partner" width="45%"></div>
             <div class="intelLogo"><img src="../../../index/Gallery/intel.png" alt="intel-logo" width="45%"></div>
-            <div class="advantechLogo"><img src="../../../index/Gallery/advantech.png" alt="Advantech-logo" width="60%"></div>
+            <div class="advantechLogo"><img src="../../../index/Gallery/advantech.png" alt="Advantech-logo" width="60%">
+            </div>
         </div>
         <div class="ebook">
             <img src="../../../index/Gallery/iot.png" alt="E-book" width="100%">
