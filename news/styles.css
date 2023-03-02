@@ -835,6 +835,77 @@ nav ul .bot1
  width: 18%;
 }
 
+
+.section5
+{
+  height: 650px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.minisection13
+{
+  width: 27%;
+  
+}
+
+.container13
+{
+  width: 100%;
+
+}
+
+.container13 h3
+{
+ font-size: 24px;
+ margin-left: 1%;
+ word-wrap: break-word;
+ width: 94%;
+ 
+ font-weight: 550;
+}
+
+.container13 p
+{
+  line-height: 30px;
+  margin-left: 1%;
+  margin-top: 8.2%;
+  width: 94%;
+}
+
+
+.box13 img
+{
+  width: 95%;
+}
+
+.container13 a
+{
+  color: #008d0a;
+}
+
+.minifooter
+{
+  width: 26%;
+  margin-left: 70%;
+  margin-top: 11.5%;
+  padding: 3%;
+  border-left: 2px solid #c6c6c639;
+}
+
+
+.minifooter a
+{
+  margin-left: 3%;
+  font-size: 14px;
+  color: #868686;
+}
+
+.minifooter img
+{
+ width: 18%;
+}
 /*====================================================================================================================*/
 
 /*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/

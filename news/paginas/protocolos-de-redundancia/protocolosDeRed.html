@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Clientes - ECO+</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,117 @@
     </div>
     </nav>
     </div>
+    <div class="tituloImplementacao">
+        <p>Protocolos de Redundância em Redes Ethernet</p>
+    </div>
+    <section class="sectionImplementacao">
+        <section class="conteudo">
+            <div class="imagemImplementacao"><img src="../../../index/Gallery/imagemnews7.png" alt="Implementação">
+            </div>
+            <article class="artigo">
+                <h4 id="por"><strong>Por: Cleiton Santos – Especialista de Produtos</strong></h4>
+                <p id="textoPartes">
+                    Se você já utilizou algum switch gerenciável em sua aplicação, certamente já deve ter configurado
+                    ou, ao menos, ter ouvido falar a respeito dos protocolos de redundância, certo!? Bom, no artigo
+                    desta semana teremos por objetivo explanar a importância de um caminho redundante em sua rede
+                    Ethernet, assim como comentar brevemente sobre os principais protocolos de redundância (em
+                    <strong>Layer 2</strong>) que são utilizados na indústria e em processos críticos.
+                </p>
+                <p id="textoPartes">O conceito de redundância foi criado para solucionar um problema conhecido na
+                    indústria: o ponto simples de falha. Basicamente, a dependência de apenas um caminho de comunicação,
+                    a depender da topologia considerada, pode levar a completa desativação de um segmento da rede.
+                    Todavia, ao criar um link redundante, um outro problema surgia: o loop de rede, ou seja, quando um
+                    dispositivo pode ser acessado por mais de um caminho. Quando isso acontece, pacotes tendem a crescer
+                    de maneira exponencial na rede, fazendo com que haja o uso completo da banda disponível, levando ao
+                    travamento da capacidade de gerência/processamento do <strong><em>switching chip</em></strong> (seja
+                    de um switch, CLP, IHM, IED, entre outros equipamentos).
+                </p>
+                <p id="textoPartes">Logo, pesquisadores fizeram a seguinte pergunta: “como ter a redundância de
+                    caminhos, isto é, evitar o ponto simples de falha, porém sem a criação de loops de rede?”. Essa
+                    questão foi o ponto de ignição para o desenvolvimento dos protocolos de redundância, os quais tem
+                    por objetivo solucionar essa problemática, ou seja, tolerância à falha – seja de caminho simples
+                    e/ou de <strong><em>loop</em></strong> de rede.</p>
+                <p id="textoPartes">Atualmente, há diversos protocolos de redundância disponíveis no mercado, sendo diferenciados por:
+                    protocolo normatizado/proprietário, topologias de rede, tempo de recuperação (ou convergência),
+                    entre outros critérios. Sendo assim, <strong>vale ressaltar que não existe protocolo bom ou ruim,
+                        mas sim um protocolo de redundância que melhor se adequa à sua aplicação</strong>.</p>
+                <p id="textoPartes">Dentre os mais conhecidos, pode-se listar os seguintes protocolos:</p>
 
+                <ul>
+                    <li><strong>RSTP</strong> (Rapid Spanning Tree Protocol), também conhecido como “IEEE802.1w” ou
+                        “IEC62439-1”: versão aprimorada no precursor STP (<em>Spanning Tree Protocol</em>), este
+                        protocolo pode ser utilizado em qualquer topologia de rede, inclusive no tipo malha, não
+                        apresentando um número limite de equipamentos na rede; apesar da sua facilidade de
+                        implementação, o tempo de recuperação depende da localização da falha o qual pode variar
+                        substancialmente; o usuário deve atentar-se ao root bridge (prioridade), aos BPDU's e aos custos
+                        dos links e portas;</li>
+                    <li><strong>MSTP</strong> (Multiple Spanning Tree Protocol): uma variante especial do RSTP, pois
+                        opera com múltiplas instâncias; apesar do princípio de operação ser exatamente o mesmo que em
+                        sua variante com instância simples (e., RSTP), o MSTP utiliza VLANs, ou seja, segmenta-se a rede
+                        em VLANs e monitora-se os links pertencentes às mesmas, logo, observa-se uma maior flexibilidade
+                        de implementação, assim como o balanceamento de carga e caminhos presente na rede;</li>
+                    <li><strong>MRP</strong> <strong>(<em>Media Redundancy Protocol</em></strong>), também conhecido
+                        como “IEC62439-2”: protocolo dedicado para uma topologia em anel com, no máximo, 50 equipamentos
+                        participantes no mesmo; uma vez que apenas duas portas são monitoradas por dispositivo, pois o
+                        equipamento está em anel, o tempo de convergência da rede é de 200ms ou 500ms – a escolha do
+                        tempo de convergência é feita pelo usuário; apesar do tempo ser um fator decisivo, a carga de
+                        dados nesta configuração tende a ser maior, pois os frames Ethernet concentram-se em apenas um
+                        link, visto que o caminho redundante é, obrigatoriamente, um dos links do <strong><em>“ring
+                                manager”</em></strong> (o gerenciador dos pacotes circulando na rede);</li>
+                    <li><strong>Fast-MRP</strong> (<em>Fast–Media Redundancy Protocol</em>): um caso especial do
+                        protocolo anterior, mas com um tempo de convergência substancialmente menor (de 30ms ou 10ms), o
+                        Fast-MRP necessita de um hardware específico para processar toda a informação em tão pouco
+                        tempo; neste caso, uma placa FPGA é usada para suprir essa necessidade de baixo tempo de
+                        convergência;</li>
+                    <li><strong>HIPER Ring</strong> (<em>High Performance Redundancy Ring</em>): muito similar ao
+                        protocolo MRP, porém é considerado um protocolo proprietário, uma vez que apenas alguns poucos
+                        fabricantes suportam o mesmo em seus dispositivos; o tempo de convergência é de 300ms ou 500ms
+                        (selecionável pelo operador), com o mesmo limite de equipamentos, isto é, até 50 equipamentos; a
+                        vantagem em se ter mais de um protocolo de anel disponível é que consegue-se utilizar o conceito
+                        de “acoplamento de protocolos em anel” (também conhecido como ring coupling), permitindo a
+                        criação da topologia do tipo anel-subanéis;</li>
+                    <li><strong>PRP</strong> (<em>Parallel Redundancy Protocol</em>), também conhecido como
+                        “IEC62439-3”: é um dos protocolos de redundância que apresenta a maior confiabilidade, isso
+                        porque o PRP é considerado um protocolo de redundância com tempo de recuperação de '0ms', pois
+                        dispositivos SANs (ou seja, equipamentos comuns), por meio de RedBoxes, tem seus pacotes
+                        duplicados (e., enviados simultaneamente) em duas redes (A e B, as quais, em momento algum,
+                        devem estar diretamente conectadas, ou seja, são caminhos independentes); em resumo, o RedBox
+                        tem duas principais funções: 1) duplicar o pacote na rede; e, 2) aceitar o primeiro pacote
+                        recebido e descartar o segundo pacote; para tanto, uma placa FPGA é utilizada para garantir a
+                        alta disponibilidade e a confiabilidade da rede;</li>
+                    <li><strong>HSR</strong> (<em>High-availability Seamless Redundancy</em>), também conhecido como
+                        “IEC62439-3”: outro protocolo de redundância com tempo de convergência de '0ms' é o HSR; assim
+                        como o PRP, o HSR envia simultaneamente o mesmo pacote por duas portas distintas, porém, neste
+                        caso, a topologia de rede é dedicada para anel; logo, somente dispositivos que suportam HSR
+                        podem participar do anel, portanto, os dispositivos SANs são colocados “dentro da rede” apenas
+                        com a ajuda dos RedBoxes (<em>Redundancy Boxes</em>); devido sua complexidade, a gestão dos
+                        pacotes duplicados é feita com o auxílio de uma placa FPGA dedicada.</li>
+                </ul>
+
+                <p id="textoPartes">Abaixo estão alguns exemplos de topologia de rede com a aplicação dos protocolos
+                    mais conhecidos, os quais foram brevemente comentados neste artigo técnico:</p>
+                <div><img src="../../../index/Gallery/protocoloeco1.png" alt="Internet 5G" id="bannerIndustria4"></div>
+                <p id="imagemFigura1">Figura 1 – Exemplo de topologia com o uso do protocolo RSTP: caminhos em stand-by são os mais
+                    distantes do root bridge.</p>
+                <div><img src="../../../index/Gallery/protocoloeco2.png" alt="Internet 5G" id="bannerIndustria4"></div>
+                <p id="imagemFigura1">Figura 2 – Exemplo de topologia com o uso dos protocolos para anel (MRP, Fast-MRP e HIPER Ring):
+                    caminho em stand-by está conectado ao ring manager.</p>
+                <div><img src="../../../index/Gallery/protocolo3.png" alt="Internet 5G" id="bannerIndustria4"></div>
+                <p id="imagemFigura1">Figura 3 – Exemplo de topologia com o uso do protocolo HSR: não há caminhos em stand-by, pois todos
+                    estão ativos, ou seja, há a duplicação de pacotes na rede.</p>
+                <div><img src="../../../index/Gallery/protocolos-eco-automacao-redes-1024x256.png" alt="Internet 5G" id="bannerIndustria4"></div>
+                <p id="imagemFigura1">Figura 4 – Exemplo de topologia com o uso do protocolo PRP: não há caminhos em stand-by, pois todos
+                    estão ativos, ou seja, há a duplicação de pacotes na rede.</p>
+                    <p id="textoPartes">Os protocolos listados acima foram apresentados de maneira isolada, porém, em alguns casos e contando com ajuda de acoplamentos de rede (<em>network coupling</em>), consegue-se unir diferentes protocolos em uma mesma rede. Logo, em redes de comunicação complexas é comum observar o uso de mais de um protocolo de redundância, como, por exemplo: HSR-HSR, HSR-PRP, RSTP-MRP, MRP-HIPER Ring, entre outras combinações.</p>
+                    <p id="textoPartes">Observação: os switches da <strong><em>Hirschmann</em></strong> contêm os protocolos RSTP e MRP nativos ao equipamento; os demais são dependentes de software (i.e., MSTP e Hiper-Ring) e/ou hardware (i.e., Fast-MRP, PRP e HSR); portanto, uma vez que há variantes dedicadas para alguns protocolos, é recomendado que haja uma consulta com a equipe técnica da <strong>Eco Automação</strong> para maiores detalhes.</p>
+                    <p id="textoPartes">Referências:</p>
+                    <ul>
+                        <li>Media Redundancy Concepts (WP 1003HE), 2014.</li>
+                        <li>Industrial communication networks – High availability automation networks, 2016.</li>
+                    </ul>
+            </article>
+        </section>
+    </section>
     <section class="artigos">
         <h3>Artigos Relacionados</h3>
         <div class="artigosRelacionados">
@@ -70,7 +180,8 @@
     </section>
 
     <div class="footer">
-        <div class="logoFooter"><img src="../../../index/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus" width="15%">
+        <div class="logoFooter"><img src="../../../index/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus"
+                width="15%">
         </div>
         <div class="footerNav">
             <ul>
@@ -103,7 +214,8 @@
             <div class="microsoftLogo"><img src="../../../index/Gallery/logo-Microsoft-Partner.png"
                     alt="logo-Microsoft-Partner" width="45%"></div>
             <div class="intelLogo"><img src="../../../index/Gallery/intel.png" alt="intel-logo" width="45%"></div>
-            <div class="advantechLogo"><img src="../../../index/Gallery/advantech.png" alt="Advantech-logo" width="60%"></div>
+            <div class="advantechLogo"><img src="../../../index/Gallery/advantech.png" alt="Advantech-logo" width="60%">
+            </div>
         </div>
         <div class="ebook">
             <img src="../../../index/Gallery/iot.png" alt="E-book" width="100%">
