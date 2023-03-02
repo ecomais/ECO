@@ -13,7 +13,6 @@ body
     background-image: url(Gallery/background.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #f8f8f8;
 }
 
 /* Div de cabeçalho */
@@ -112,23 +111,115 @@ nav ul .bot1
     background-color: #06BC10;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
-.artigo #vejaASeguir
+.sectionImplementacao
 {
-  margin-top: 2%;
-}
-.artigo ol
-{
-  margin-top: 2%;
-  line-height: 45px;
-  color: #008000;
-  list-style-position: inside;
-  margin-left: 2%;
-  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  
 }
 
-.artigo #emSuma
+.conteudo
+{
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 2%;
+  background-color: #f8f8f8;
+}
+
+.tituloImplementacao
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+
+.tituloImplementacao p
+{
+  font-size: 49pt;
+  line-height: 5rem;
+  font-weight: 300;
+  width: 75%;
+  text-align: center;
+  
+}
+
+.conteudo
+{
+ align-items: center;
+}
+
+.imagemImplementacao
+{
+  margin-top: 10%;
+  width: 60.6%;
+}
+
+.imagemImplementacao img 
+{
+  align-items: center;
+  width: 100%;
+}
+
+.artigo
+{
+  display: inline-block;
+  text-align: justify;
+}
+.artigo h4
+{
+  margin-top: 5%;
+  font-size: 16px;
+}
+.artigo #subheading
+{
+  font-size: 60px;
+  font-weight: 900;
+  color: #008d0a;
+  margin-top: 1%;
+}
+
+.artigo #textoPartes
+{
+  position: relative;
+  line-height: 40px;
+  margin-top: 1%;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.artigo ul
 {
   margin-top: 2%;
+  width: 60%;
+  font-size: 15px;
+  line-height: 45px;
+  font-weight: 300;
+  color: #778086;
+  list-style-position: inside;
+  margin-left: 6%;
+  text-align: justify;
+} 
+#textoPartes a
+{
+  color: #383838d0;
+  font-size: 17px;
+}
+#textoPartes a:hover
+{
+  color: #00000079;
+  text-decoration: underline;
+}
+
+.artigo #bannerIndustria4 
+{
+  width: 46%;
 }
 
 .artigos
@@ -165,7 +256,7 @@ nav ul .bot1
 }
 .coluna1 img, .coluna2 img, .coluna3 img
 {
-  max-width: 100%;
+  max-width: 95%;
 }
 
 .coluna1 p, .coluna2 p, .coluna3 p
@@ -177,7 +268,7 @@ nav ul .bot1
 
 .coluna1 h1 a, .coluna2 h1 a, .coluna3 h1 a
 {
-  font-size: 27px;
+  font-size: 23px;
   line-height: 40px;
   color: #06BC10;
 }
@@ -187,7 +278,7 @@ nav ul .bot1
   width: 45%;
   background-color: #008d0a;
   border: none;
-  margin-top:20%;
+  margin-top:18%;
   height: 8%;
   border-radius: 40px;
 }
@@ -196,7 +287,7 @@ nav ul .bot1
   width: 45%;
   background-color: #008d0a;
   border: none;
-  margin-top:28.8%;
+  margin-top:28%;
   height: 8%;
   border-radius: 40px;
 }

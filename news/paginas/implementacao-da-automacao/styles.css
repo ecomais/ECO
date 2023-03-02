@@ -220,15 +220,12 @@ nav ul .bot1
 
 .artigos h3
 {
-  color: #009d00;
+  color: #06BC10;
   padding-bottom: 2%;
-  margin-left: 9%;
-  font-size: 18pt;
-  font-weight: 400;
+  margin-left: 9.5%;
+  font-size: 25pt;
 }
-
-.artigosRelacionados
-{
+.artigosRelacionados {
   display: flex;
   justify-content: space-evenly;
   gap: 2%;
@@ -246,7 +243,7 @@ nav ul .bot1
 }
 .coluna1 img, .coluna2 img, .coluna3 img
 {
-  max-width: 100%;
+  max-width: 95%;
 }
 
 .coluna1 p, .coluna2 p, .coluna3 p
@@ -258,9 +255,9 @@ nav ul .bot1
 
 .coluna1 h1 a, .coluna2 h1 a, .coluna3 h1 a
 {
-  font-size: 27px;
+  font-size: 23px;
   line-height: 40px;
-  color: #009d00;
+  color: #06BC10;
 }
 
 .coluna1 button 
@@ -268,7 +265,7 @@ nav ul .bot1
   width: 45%;
   background-color: #008d0a;
   border: none;
-  margin-top:8%;
+  margin-top:18%;
   height: 8%;
   border-radius: 40px;
 }

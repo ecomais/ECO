@@ -165,7 +165,7 @@ nav ul .bot1
 }
 .coluna1 img, .coluna2 img, .coluna3 img
 {
-  max-width: 100%;
+  max-width: 95%;
 }
 
 .coluna1 p, .coluna2 p, .coluna3 p
@@ -177,7 +177,7 @@ nav ul .bot1
 
 .coluna1 h1 a, .coluna2 h1 a, .coluna3 h1 a
 {
-  font-size: 27px;
+  font-size: 23px;
   line-height: 40px;
   color: #06BC10;
 }
@@ -187,7 +187,7 @@ nav ul .bot1
   width: 45%;
   background-color: #008d0a;
   border: none;
-  margin-top:20%;
+  margin-top:18%;
   height: 8%;
   border-radius: 40px;
 }
@@ -196,7 +196,7 @@ nav ul .bot1
   width: 45%;
   background-color: #008d0a;
   border: none;
-  margin-top:28.8%;
+  margin-top:28%;
   height: 8%;
   border-radius: 40px;
 }
