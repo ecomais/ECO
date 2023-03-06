@@ -13,7 +13,7 @@ body
     background-image: url(Gallery/background.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #f8f8f8;
+
 }
 
 /* Div de cabeçalho */
@@ -112,6 +112,129 @@ nav ul .bot1
     background-color: #06BC10;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
+.sectionCybersecurity
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  
+}
+
+.conteudo
+{
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 2%;
+  background-color: #f8f8f8;
+  align-items: center;
+}
+
+.tituloCybersecurity
+{
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+ background-color: #ffffff;
+}
+
+
+.tituloCybersecurity p
+{
+  font-size: 54pt;
+  line-height: 5rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0px 47px;
+}
+
+
+.cybersecurity
+{
+ 
+  margin-top: 10%;
+  width: 60%;
+}
+
+.cybersecurity img
+{
+  width: 100%;
+}
+
+.banner-com-texto {
+  display: flex;
+  align-items: flex-start;
+}
+
+.banner-imagem {
+  margin-right: 20px;
+  flex-shrink: 0;
+  shape-outside: url('../../../index/Gallery/banner-advantech.jpg');
+  shape-margin: 20px;
+}
+
+.banner-imagem img {
+  width: 100%;
+}
+
+.banner-texto {
+  flex-grow: 1;
+}
+.subtitulo
+{
+  right: 50%;
+}
+
+
+
+.artigo
+{
+  display: inline-block;
+  text-align: justify;
+}
+.artigo h4
+{
+  margin-top: 5%;
+  font-size: 16px;
+}
+
+.artigo #textoPartes
+{
+  position: relative;
+  line-height: 40px;
+  margin-top: 1%;
+}
+
+
+#textoPartes a
+{
+  color: #383838;
+  font-size: 17px;
+}
+
+#textoPartes a:hover
+{
+  color: #000000;
+  text-decoration: underline;
+}
+
+.artigo ul
+{
+  margin-top: 2%;
+  line-height: 45px;
+  color: #737e86;
+  list-style-position: inside;
+  margin-left: 2%;
+  text-align: justify;
+} 
+
+.artigo #eVoce
+{
+  margin-top: 2%;
+}
+
 .artigo #vejaASeguir
 {
   margin-top: 2%;
@@ -120,10 +243,14 @@ nav ul .bot1
 {
   margin-top: 2%;
   line-height: 45px;
-  color: #008000;
   list-style-position: inside;
   margin-left: 2%;
   text-align: justify;
+}
+
+.artigo #emSuma
+{
+  margin-top: 2%;
 }
 
 .artigo #emSuma

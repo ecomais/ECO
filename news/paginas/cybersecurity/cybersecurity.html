@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Clientes - ECO+</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,83 +34,151 @@
     </div>
     </nav>
     </div>
-
-    <section class="artigos">
-        <h3>Artigos Relacionados</h3>
-        <div class="artigosRelacionados">
-            <div class="coluna1"><img src="../../../index/Gallery/imagemnews11.png" alt="Segurança da informação">
-                <p>20 de setembro de 2022</p>
-                <h1>
-                    <a href="../seguranca-de-dados/seguranca.html" rel="next" target="_self">Dados, informação,
-                        conhecimento
-                        e sabedoria: em qual nível da pirâmide do conhecimento
-                        você
-                        está?</a>
-                </h1>
-                <button><i></i><a href="../dados/dados.html" rel="next" target="self">Leia Mais</a></button>
-            </div>
-            <div class="coluna2"><img src="../../../index/Gallery/imagemnews2.png" alt="Switches Gerenciáveis">
-                <p>20 de setembro de 2022</p>
-                <h1>
-                    <a href="../exemplo-de-aplicação/exemploDeA.html" rel="next" target="_self">Exemplo de Aplicação:
-                        VLANs
-                        em Switches Gerenciáveis</a>
-                </h1>
-                <button><i></i><a href="../exemplo-de-aplicação/exemploDeA.html" rel="next" target="_self">Leia
-                        Mais</a></button>
-            </div>
-            <div class="coluna3"><img src="../../../index/Gallery/imagemnews1.png" alt="Celular com Símbolo wi-fi 5G">
-                <p>20 de setembro de 2022</p>
-                <h1><a href="../internet-5g-e-agora/internet5g.html" rel="next" target="_self">Internet 5G: e agora?</a>
-                </h1>
-                <button><i></i><a href="../internet-5g-e-agora/internet5g.html" rel="next" target="_self">Leia
-                        Mais</a></button>
-            </div>
+    <section class="sectionCybersecurity">
+        <div class="tituloCybersecurity">
+            <p>Cybersecurity: Um Tema que Precisamos Discutir!</p>
         </div>
-    </section>
+        <section class="conteudo">
+            <div class="cybersecurity"><img src="../../../index/Gallery/imagemnews5.png" alt="cybersecurity"></div>
+            <article class="artigo">
+                <h4><strong>Por: Cleiton Santos – Especialista de Produtos</strong></h4>
+                <p id="textoPartes">
+                    Falar sobre segurança contra ataques cibernéticos no ambiente industrial não é um tema novo. Com uma
+                    simples pesquisa na internet conseguimos identificar diversos eventos onde plantas industriais (seja
+                    de manufatura, processo, energia, óleo e gás, entre outras) sofreram alguma forma de ataque. Em
+                    alguns casos, estes <strong><em>“cybers attacks”</em></strong> visam apenas a indisponibilidade do
+                    sistema. Já em outros, os ataques têm objetivos financeiros (por exemplo, cobrar um determinado
+                    valor para desbloquear os equipamentos).</p>
+                <div class="banner-com-texto">
+                    <a href="https://academy.advantech.com/en/courses"><img
+                        src="../../../index/Gallery/banner-advantech.jpg" alt="banner-advantech"></a>
+                    <p id="textoPartes">
+                        Infelizmente, não há uma receita para se proteger destes ataques. Inclusive, todos nós, pessoas
+                        físicas, estamos sujeitos aos mesmos. Ainda assim, na indústria os ataques são ainda mais
+                        críticos, dado que os processos e, até mesmo, vidas humanas estão em jogo.
+                    </p>
+                    <p>Por mais que não haja uma receita, há guias de boas práticas que podem nos auxiliar neste tema.
+                        Por exemplo, a ISA/IEC-62443 (conhecida até pouco tempo como ANSI/ISA-99) é um guia aplicável a
+                        redes de comunicação industrial com foco na segurança de TI para redes e sistemas. Além da
+                        IEC-62443, alguns segmentos de mercado optam por outros guias com credibilidade, entre eles:
+                        NERC-CIP, NIST-CSF, CIS Controls, entre outros. Portanto, é importante que a organização tenha
+                        ciência do objetivo e, assim, eleger o guia que melhor se adequa aos seus processos.</p>
+                </div>
+            
+                <div><img src="../../../index/Gallery/nist-eco-automacao-300x281.png" alt="Cybersecurity cycle">                <p id="textoPartes">
+                    Figura 1 – Exemplo do NIST Cybersecurity Framework (CSF). Fonte: https://www.nist.gov/cyberframework
+                </p>
+                <p id="textoPartes">Independentemente do framework escolhido, há alguns procedimentos e/ou equipamentos que auxiliam na
+                    proteção da rede:</p>
+                <ul>
+                    <li><strong>Firewalls</strong>: atualmente os firewalls já são utilizados como barreiras de defesa em uma rede
+                        industrial; temos firewalls de borda (<strong><em>layer 3</em></strong>), de campo (<strong><em>layer 2</em></strong>), <strong><em>stateless</em></strong>, <strong><em>stateful</em></strong> (SPI),
+                        <strong><em>deep</em></strong> (DPI), entre outros; portanto, observamos uma necessidade e aceitação cada vez maior desta
+                        solução nas indústrias;</li>
+                    <li><strong>Roteadores</strong>: equipamentos capazes de habilitar a comunicação entre duas redes distintas, e que
+                        também podem ser utilizados para criação de área DMZ, isto é, uma “área neutra”;</li>
+                    <li><strong>Switches</strong>: um dos principais e mais difundidos equipamentos de rede industriais
+                        são os equipamentos <strong><em>layer 2</em></strong>, ou seja, switches; alguns switches gerenciáveis já permitem alguma
+                        implementação básica de segurança, como por exemplo: segregação de tráfego por VLANs (redes
+                        virtuais), desativação/desabilitação de portas (ex.: porta não utilizada, ou após tentativa de
+                        acesso de um endereço MAC não autorizado, etc.), listas de controle de acesso (permissão e/ou
+                        negação de acesso de usuários/equipamentos), entre outros procedimentos de segurança;</li>
+                    <li><strong>Sistemas de detecção</strong>: em um ambiente industrial, a detecção e bloqueio de um
+                        ataque nocivo pode ser complementada com softwares dedicados para o registro destes ataques;
+                        atualmente, os softwares de gestão (ex.: Tripwire Industrial Visibility) consegue identificar e,
+                        portanto, ter a rastreabilidade dos eventos (fluxo de tráfego, falhas de segurança, atualizações
+                        de firmwares, entre muitas outras funcionalidades); assim, políticas específicas podem ser
+                        desenvolvidas para melhorar os sistemas físicos de segurança.</li>
+                </ul>
+                <p id="textoPartes">Portanto, devemos dar a devida atenção a este tema por ser crítico e com diversas
+                    consequências indesejadas. <strong>Apenas lembrando que <em>cybersecurity</em> é um processo de
+                        melhoria contínua, no qual o processo, departamento e pessoas estão sempre em evolução e
+                        aprendizado.</strong></p>
+                <p id="textoPartes">E aí, já tem pensado neste tema para a sua empresa? Conta para nós!</p>
+            </article>
+        </section>
 
-    <div class="footer">
-        <div class="logoFooter"><img src="../../../index/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus" width="15%">
-        </div>
-        <div class="footerNav">
-            <ul>
-                <li>
-                    <a>ECO+ </a>
-                </li>
-                <li>
-                    <a>Soluções</a>
-                </li>
-                <li>
-                    <a>Cases</a>
-                </li>
-                <li>
-                    <a>Clientes</a>
-                </li>
-                <li>
-                    <a>News</a>
-                </li>
-            </ul>
-            <div class="content">
-                <a href="https://www.ecoplusautomacao.com.br/politicas-de-privacidade/" rel="external">Política de
-                    privacidade</a>
-                <a href="mailto:contato@ecoplusautomacao.com.br">contato@ecoplusautomacao.com.br</a>
-                <p>©2021 ECO+</p>
-                <div><img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <section class="artigos">
+            <h3>Artigos Relacionados</h3>
+            <div class="artigosRelacionados">
+                <div class="coluna1"><img src="../../../index/Gallery/imagemnews11.png" alt="Segurança da informação">
+                    <p>20 de setembro de 2022</p>
+                    <h1>
+                        <a href="../seguranca-de-dados/seguranca.html" rel="next" target="_self">Dados, informação,
+                            conhecimento
+                            e sabedoria: em qual nível da pirâmide do conhecimento
+                            você
+                            está?</a>
+                    </h1>
+                    <button><i></i><a href="../dados/dados.html" rel="next" target="self">Leia Mais</a></button>
+                </div>
+                <div class="coluna2"><img src="../../../index/Gallery/imagemnews2.png" alt="Switches Gerenciáveis">
+                    <p>20 de setembro de 2022</p>
+                    <h1>
+                        <a href="../exemplo-de-aplicação/exemploDeA.html" rel="next" target="_self">Exemplo de
+                            Aplicação:
+                            VLANs
+                            em Switches Gerenciáveis</a>
+                    </h1>
+                    <button><i></i><a href="../exemplo-de-aplicação/exemploDeA.html" rel="next" target="_self">Leia
+                            Mais</a></button>
+                </div>
+                <div class="coluna3"><img src="../../../index/Gallery/imagemnews1.png"
+                        alt="Celular com Símbolo wi-fi 5G">
+                    <p>20 de setembro de 2022</p>
+                    <h1><a href="../internet-5g-e-agora/internet5g.html" rel="next" target="_self">Internet 5G: e
+                            agora?</a>
+                    </h1>
+                    <button><i></i><a href="../internet-5g-e-agora/internet5g.html" rel="next" target="_self">Leia
+                            Mais</a></button>
                 </div>
             </div>
-            <div class="microsoftLogo"><img src="../../../index/Gallery/logo-Microsoft-Partner.png"
-                    alt="logo-Microsoft-Partner" width="45%"></div>
-            <div class="intelLogo"><img src="../../../index/Gallery/intel.png" alt="intel-logo" width="45%"></div>
-            <div class="advantechLogo"><img src="../../../index/Gallery/advantech.png" alt="Advantech-logo" width="60%"></div>
+        </section>
+
+        <div class="footer">
+            <div class="logoFooter"><img src="../../../index/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus"
+                    width="15%">
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li>
+                        <a>ECO+ </a>
+                    </li>
+                    <li>
+                        <a>Soluções</a>
+                    </li>
+                    <li>
+                        <a>Cases</a>
+                    </li>
+                    <li>
+                        <a>Clientes</a>
+                    </li>
+                    <li>
+                        <a>News</a>
+                    </li>
+                </ul>
+                <div class="content">
+                    <a href="https://www.ecoplusautomacao.com.br/politicas-de-privacidade/" rel="external">Política de
+                        privacidade</a>
+                    <a href="mailto:contato@ecoplusautomacao.com.br">contato@ecoplusautomacao.com.br</a>
+                    <p>©2021 ECO+</p>
+                    <div><img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="microsoftLogo"><img src="../../../index/Gallery/logo-Microsoft-Partner.png"
+                        alt="logo-Microsoft-Partner" width="45%"></div>
+                <div class="intelLogo"><img src="../../../index/Gallery/intel.png" alt="intel-logo" width="45%"></div>
+                <div class="advantechLogo"><img src="../../../index/Gallery/advantech.png" alt="Advantech-logo"
+                        width="60%"></div>
+            </div>
+            <div class="ebook">
+                <img src="../../../index/Gallery/iot.png" alt="E-book" width="100%">
+                <div class="downloadEbook"><a href="">Faça o download <br><strong>gratuito do E-book</strong></a></div>
+            </div>
+            <!-- <div class="marcaDagua">Managed by <img src="Gallery/favicon.ico" alt="Eco+" height="15px"></div> -->
         </div>
-        <div class="ebook">
-            <img src="../../../index/Gallery/iot.png" alt="E-book" width="100%">
-            <div class="downloadEbook"><a href="">Faça o download <br><strong>gratuito do E-book</strong></a></div>
-        </div>
-        <!-- <div class="marcaDagua">Managed by <img src="Gallery/favicon.ico" alt="Eco+" height="15px"></div> -->
-    </div>
 
 </body>
 
