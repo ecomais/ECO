@@ -150,18 +150,32 @@ nav ul .bot1
 }
 
 
-.imagemInternet5G
+.artigo #chatGpt1
 {
- 
-  margin-top: 10%;
-  width: 60%;
+  display: block;
+  margin: 0 auto;
+
+  margin-top: 3%;
 }
 
-.imagemInternet5G img
+.chatGpt1 img 
 {
+  align-items: center;
   width: 100%;
 }
+.artigo #chatGpt2
+{
+  display: block;
+  margin: 0 auto;
 
+  margin-top: 3%;
+}
+
+.chatGpt2 img 
+{
+  align-items: center;
+  width: 100%;
+}
 
 .subtitulo
 {
