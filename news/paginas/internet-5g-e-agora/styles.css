@@ -253,14 +253,16 @@ nav ul .bot1
   color: #06BC10;
   padding-bottom: 2%;
   margin-left: 9.5%;
-  font-size: 25pt;
+  margin-top: -1%;
+  font-size: 16pt;
 }
 .artigosRelacionados {
   display: flex;
   justify-content: space-evenly;
   gap: 2%;
   width: 83%;
-  margin: 0 auto;
+  margin-left: 9.5%;
+  
 }
 
 
@@ -269,6 +271,7 @@ nav ul .bot1
   width: 80%;
   height: 680px;
   display: flex;
+  margin-left: 2%;
   flex-direction: column;
 }
 .coluna1 img, .coluna2 img, .coluna3 img

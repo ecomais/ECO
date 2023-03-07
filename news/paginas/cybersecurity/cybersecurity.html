@@ -51,50 +51,71 @@
                     valor para desbloquear os equipamentos).</p>
                 <div class="banner-com-texto">
                     <a href="https://academy.advantech.com/en/courses"><img
-                        src="../../../index/Gallery/banner-advantech.jpg" alt="banner-advantech"></a>
-                    <p id="textoPartes">
+                            src="../../../index/Gallery/banner-advantech.jpg" alt="banner-advantech"></a>
+                    <p id="paragrafo1">
                         Infelizmente, não há uma receita para se proteger destes ataques. Inclusive, todos nós, pessoas
                         físicas, estamos sujeitos aos mesmos. Ainda assim, na indústria os ataques são ainda mais
                         críticos, dado que os processos e, até mesmo, vidas humanas estão em jogo.
                     </p>
-                    <p>Por mais que não haja uma receita, há guias de boas práticas que podem nos auxiliar neste tema.
+                    <p id="paragrafo2">Por mais que não haja uma receita, há guias de boas práticas que podem nos
+                        auxiliar neste tema.
                         Por exemplo, a ISA/IEC-62443 (conhecida até pouco tempo como ANSI/ISA-99) é um guia aplicável a
-                        redes de comunicação industrial com foco na segurança de TI para redes e sistemas. Além da
+                        redes de</p>
+                    <p id="paragrafo3"> comunicação industrial com foco na segurança de TI para redes e sistemas. Além
+                        da
                         IEC-62443, alguns segmentos de mercado optam por outros guias com credibilidade, entre eles:
                         NERC-CIP, NIST-CSF, CIS Controls, entre outros. Portanto, é importante que a organização tenha
                         ciência do objetivo e, assim, eleger o guia que melhor se adequa aos seus processos.</p>
                 </div>
-            
-                <div><img src="../../../index/Gallery/nist-eco-automacao-300x281.png" alt="Cybersecurity cycle">                <p id="textoPartes">
-                    Figura 1 – Exemplo do NIST Cybersecurity Framework (CSF). Fonte: https://www.nist.gov/cyberframework
-                </p>
-                <p id="textoPartes">Independentemente do framework escolhido, há alguns procedimentos e/ou equipamentos que auxiliam na
-                    proteção da rede:</p>
-                <ul>
-                    <li><strong>Firewalls</strong>: atualmente os firewalls já são utilizados como barreiras de defesa em uma rede
-                        industrial; temos firewalls de borda (<strong><em>layer 3</em></strong>), de campo (<strong><em>layer 2</em></strong>), <strong><em>stateless</em></strong>, <strong><em>stateful</em></strong> (SPI),
-                        <strong><em>deep</em></strong> (DPI), entre outros; portanto, observamos uma necessidade e aceitação cada vez maior desta
-                        solução nas indústrias;</li>
-                    <li><strong>Roteadores</strong>: equipamentos capazes de habilitar a comunicação entre duas redes distintas, e que
-                        também podem ser utilizados para criação de área DMZ, isto é, uma “área neutra”;</li>
-                    <li><strong>Switches</strong>: um dos principais e mais difundidos equipamentos de rede industriais
-                        são os equipamentos <strong><em>layer 2</em></strong>, ou seja, switches; alguns switches gerenciáveis já permitem alguma
-                        implementação básica de segurança, como por exemplo: segregação de tráfego por VLANs (redes
-                        virtuais), desativação/desabilitação de portas (ex.: porta não utilizada, ou após tentativa de
-                        acesso de um endereço MAC não autorizado, etc.), listas de controle de acesso (permissão e/ou
-                        negação de acesso de usuários/equipamentos), entre outros procedimentos de segurança;</li>
-                    <li><strong>Sistemas de detecção</strong>: em um ambiente industrial, a detecção e bloqueio de um
-                        ataque nocivo pode ser complementada com softwares dedicados para o registro destes ataques;
-                        atualmente, os softwares de gestão (ex.: Tripwire Industrial Visibility) consegue identificar e,
-                        portanto, ter a rastreabilidade dos eventos (fluxo de tráfego, falhas de segurança, atualizações
-                        de firmwares, entre muitas outras funcionalidades); assim, políticas específicas podem ser
-                        desenvolvidas para melhorar os sistemas físicos de segurança.</li>
-                </ul>
-                <p id="textoPartes">Portanto, devemos dar a devida atenção a este tema por ser crítico e com diversas
-                    consequências indesejadas. <strong>Apenas lembrando que <em>cybersecurity</em> é um processo de
-                        melhoria contínua, no qual o processo, departamento e pessoas estão sempre em evolução e
-                        aprendizado.</strong></p>
-                <p id="textoPartes">E aí, já tem pensado neste tema para a sua empresa? Conta para nós!</p>
+                <div class="cyberSecurityCycle"><img src="../../../index/Gallery/nist-eco-automacao-300x281.png" alt="Cybersecurity cycle" id="figura1">
+                    <p id="imagemFigura1">
+                        Figura 1 – Exemplo do NIST Cybersecurity Framework (CSF). Fonte:
+                        https://www.nist.gov/cyberframework
+                    </p>
+                </div>
+                    
+                    <p id="textoPartes">Independentemente do framework escolhido, há alguns procedimentos e/ou
+                        equipamentos que auxiliam na
+                        proteção da rede:</p>
+                    <ul>
+                        <li><strong>Firewalls</strong>: atualmente os firewalls já são utilizados como barreiras de
+                            defesa em uma rede
+                            industrial; temos firewalls de borda (<strong><em>layer 3</em></strong>), de campo
+                            (<strong><em>layer 2</em></strong>), <strong><em>stateless</em></strong>,
+                            <strong><em>stateful</em></strong> (SPI),
+                            <strong><em>deep</em></strong> (DPI), entre outros; portanto, observamos uma necessidade e
+                            aceitação cada vez maior desta
+                            solução nas indústrias;
+                        </li>
+                        <li><strong>Roteadores</strong>: equipamentos capazes de habilitar a comunicação entre duas
+                            redes distintas, e que
+                            também podem ser utilizados para criação de área DMZ, isto é, uma “área neutra”;</li>
+                        <li><strong>Switches</strong>: um dos principais e mais difundidos equipamentos de rede
+                            industriais
+                            são os equipamentos <strong><em>layer 2</em></strong>, ou seja, switches; alguns switches
+                            gerenciáveis já permitem alguma
+                            implementação básica de segurança, como por exemplo: segregação de tráfego por VLANs (redes
+                            virtuais), desativação/desabilitação de portas (ex.: porta não utilizada, ou após tentativa
+                            de
+                            acesso de um endereço MAC não autorizado, etc.), listas de controle de acesso (permissão
+                            e/ou
+                            negação de acesso de usuários/equipamentos), entre outros procedimentos de segurança;</li>
+                        <li><strong>Sistemas de detecção</strong>: em um ambiente industrial, a detecção e bloqueio de
+                            um
+                            ataque nocivo pode ser complementada com softwares dedicados para o registro destes ataques;
+                            atualmente, os softwares de gestão (ex.: Tripwire Industrial Visibility) consegue
+                            identificar e,
+                            portanto, ter a rastreabilidade dos eventos (fluxo de tráfego, falhas de segurança,
+                            atualizações
+                            de firmwares, entre muitas outras funcionalidades); assim, políticas específicas podem ser
+                            desenvolvidas para melhorar os sistemas físicos de segurança.</li>
+                    </ul>
+                    <p id="textoPartes">Portanto, devemos dar a devida atenção a este tema por ser crítico e com
+                        diversas
+                        consequências indesejadas. <strong>Apenas lembrando que <em>cybersecurity</em> é um processo de
+                            melhoria contínua, no qual o processo, departamento e pessoas estão sempre em evolução e
+                            aprendizado.</strong></p>
+                    <p id="textoPartes">E aí, já tem pensado neste tema para a sua empresa? Conta para nós!</p>
             </article>
         </section>
 

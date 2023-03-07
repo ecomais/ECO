@@ -153,7 +153,6 @@ nav ul .bot1
 
 .cybersecurity
 {
- 
   margin-top: 10%;
   width: 60%;
 }
@@ -161,11 +160,6 @@ nav ul .bot1
 .cybersecurity img
 {
   width: 100%;
-}
-
-.banner-com-texto {
-  display: flex;
-  align-items: flex-start;
 }
 
 .banner-imagem {
@@ -179,14 +173,61 @@ nav ul .bot1
   width: 100%;
 }
 
-.banner-texto {
-  flex-grow: 1;
-}
-.subtitulo
-{
-  right: 50%;
+.banner-com-texto{
+  margin-top: 1%;
+} 
+.banner-com-texto img{
+  margin-top: 2%;
+  position: relative;
+  z-index: 0;
 }
 
+.banner-com-texto #paragrafo1
+{
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  line-height: 35px;
+  margin-top: -45%;
+  padding: 0px 0px 0px 1040px;
+}
+.banner-com-texto #paragrafo2
+{
+  font-size: 15px;
+  position: relative;
+  text-align: left;
+  z-index: 2;
+  margin-top: 1%;
+  line-height: 30px;
+  padding: 0px 20px 0px 1035px;
+
+}
+
+.banner-com-texto #paragrafo3
+{
+  font-size: 15px;
+  position: relative;
+  text-align: left;
+  z-index: 3;
+  line-height: 30px;
+}
+
+.artigo #figura1
+{
+  display: block;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.artigo #imagemFigura1
+{
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #838c92;
+}
 
 
 .artigo
@@ -203,21 +244,11 @@ nav ul .bot1
 .artigo #textoPartes
 {
   position: relative;
-  line-height: 40px;
+  text-align: left;
+  line-height: 30px;
+  font-size: 15.5px;
+  font-weight: 550;
   margin-top: 1%;
-}
-
-
-#textoPartes a
-{
-  color: #383838;
-  font-size: 17px;
-}
-
-#textoPartes a:hover
-{
-  color: #000000;
-  text-decoration: underline;
 }
 
 .artigo ul
@@ -230,33 +261,6 @@ nav ul .bot1
   text-align: justify;
 } 
 
-.artigo #eVoce
-{
-  margin-top: 2%;
-}
-
-.artigo #vejaASeguir
-{
-  margin-top: 2%;
-}
-.artigo ol
-{
-  margin-top: 2%;
-  line-height: 45px;
-  list-style-position: inside;
-  margin-left: 2%;
-  text-align: justify;
-}
-
-.artigo #emSuma
-{
-  margin-top: 2%;
-}
-
-.artigo #emSuma
-{
-  margin-top: 2%;
-}
 
 .artigos
 {
@@ -272,14 +276,16 @@ nav ul .bot1
   color: #06BC10;
   padding-bottom: 2%;
   margin-left: 9.5%;
-  font-size: 25pt;
+  margin-top: -1%;
+  font-size: 16pt;
 }
 .artigosRelacionados {
   display: flex;
   justify-content: space-evenly;
   gap: 2%;
   width: 83%;
-  margin: 0 auto;
+  margin-left: 9.5%;
+  
 }
 
 
@@ -288,6 +294,7 @@ nav ul .bot1
   width: 80%;
   height: 680px;
   display: flex;
+  margin-left: 2%;
   flex-direction: column;
 }
 .coluna1 img, .coluna2 img, .coluna3 img
