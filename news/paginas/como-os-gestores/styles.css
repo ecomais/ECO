@@ -624,9 +624,67 @@ nav ul .bot1 {
   
   
   @media (min-width: 768px) and (max-width: 991px) {
-  /* CSS rules for tablets /
+  /* CSS rules for tablets */
   .container {
-  / ... */
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .container a {
+    width: 36%;
+  }
+
+  .container a #imagemEco {
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 1%;
+  }
+
+  .container nav {
+    width: 50%;
+  }
+
+  /* Make the navigation links stack vertically */
+  .container nav ul {
+    margin-top: 12%;
+    margin-left: -22%;
+  }
+
+  /* Adjust the font size of the navigation links */
+  nav ul li a {
+    font-size: 14px;
+  }
+  /* Add some spacing between the navigation links */
+  nav ul li {
+    margin-top: -2%;
+    margin-left: -8%;
+    padding: 0px 0px 23px 0px;
+  }
+  
+  .coluna1 p,
+  .coluna2 p,
+  .coluna3 p {
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  
+  .coluna1 h1 a{
+    font-size: 23px;
+    line-height: 2rem;
+  }
+  .coluna2 h1 a,
+  .coluna3 h1 a {
+    font-size: 23px;
+    line-height: 2em;
+  }
+
+ .coluna3 button {
+  margin-top: 40%;
+  }
+  .ebook
+  {
+    margin-top: -37.5%;
+  }
   }
   
   
