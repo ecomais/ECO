@@ -742,3 +742,31 @@ nav ul .bot1 {
   }
   }
   
+  @media (min-width: 1500px) {
+    /* CSS rules for desktops */
+    .coluna1 p,
+    .coluna2 p,
+    .coluna3 p {
+      margin-top: 5%;
+      margin-bottom: 15%;
+    }
+    
+    .coluna1 h1 a{
+      font-size: 23px;
+      line-height: 2rem;
+    }
+    .coluna2 h1 a,
+    .coluna3 h1 a {
+      font-size: 23px;
+      line-height: 2em;
+    }
+  
+   .coluna3 button {
+    margin-top: 40%;
+    }
+    .ebook
+    {
+      margin-top: -30.4%;
+    }
+    }
+    
