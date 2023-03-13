@@ -1,127 +1,123 @@
 /*Style global*/
-*{
-    font-family: "Roboto",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    text-decoration: none; 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Conteúdo do body */
-body 
-{
-    background-image: url(Gallery/background.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+body {
+  background-image: url(Gallery/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Div de cabeçalho */
-.container
-{
-    margin: 0 auto;
+.container {
+  margin: 0 auto;
+  display: inline-flex;
 }
 
+.container a {
+  width: 43%;
+}
 /* Barra de navegação */
-nav
-{
-    display: flex;
-    justify-content: space-between;
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 18.3%;
 }
 
+.container #imagemEco {
+  width: 98%;
+}
 /* Controle da logo à esquerda */
-.logo
-{
-    display: block;
-    transition: 0.6s;
-   width: 24%;
-   padding: 25px;
-   margin-left: 136px;
+#imagemEco {
+  display: block;
+  transition: 0.6s;
+  padding: 25px;
+  margin-left: 36.5%;
 }
 
 /* Efeito no logo ao passar o mouse */
-.logo:hover
-{
-    display: block;
-    border-radius: 10px;
-    height: 126px;
-    box-shadow: 0 0 20px #00ff00, 0 0 10px white, 0 0 40px black;
-    background: transparent;
-    backdrop-filter: blur(5px);
+#imagemEco:hover {
+  display: block;
+  border-radius: 10px;
+
+  box-shadow: 0 0 20px #00ff00, 0 0 10px white, 0 0 40px black;
+  background: transparent;
+  backdrop-filter: blur(5px);
 }
 
 /* Lista: Inicio, Eco+, Soluções, Cases, News, Clientes e Contato */
-nav ul
-{
-    word-spacing: 8px;
-    padding: 25px;
-    margin-right: 138px;
-    list-style: none;
+nav ul {
+  word-spacing: 8px;
+  padding: 25px;
+  margin-right: 1%;
+  list-style: none;
+  width: 100%;
 }
 
 /* Posicionamento e tamanho nos itens dentro da lista */
-nav ul li
-{
-    padding: 23px 0px 27px 0px;
-    margin-left: -2px;
-    display: inline-block;
+nav ul li {
+  padding: 23px 0px 27px 0px;
+  margin-left: -2px;
+  display: inline-block;
 }
 
 /* Estilização do item da lista clicável */
-nav ul li a
-{
-    padding: 10px 14px;
-    color: black;
-    font-size: 11pt;
-    font-weight: 750;
-    transition: 0.5s;
+nav ul li a {
+  padding: 10px 14px;
+  color: black;
+  font-size: 11pt;
+  font-weight: 750;
+  transition: 0.5s;
 }
 
 /* Estilização de hover */
- nav ul  a:hover
-{
-    filter: brightness(2);
-    background-color: #008d0a;
-    color: black;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 14px;
-} 
+nav ul a:hover {
+  filter: brightness(2);
+  background-color: #008d0a;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 14px;
+}
 
 /* Botão de contato 1 localizado no cabeçalho ao lado direito */
-nav ul .bot1
-{
-    padding: 11px 33px;
-    border-radius: 30px;
-    border: none;
-    background-color: #008d0a;
-    color: white;
-    margin-left: 20px;
-    font-weight: 650;
-    font-size: 15px;
+nav ul .bot1 {
+  padding: 11px 33px;
+  border-radius: 30px;
+  border: none;
+  background-color: #008d0a;
+  color: white;
+  margin-left: 20px;
+  font-weight: 650;
+  font-size: 15px;
 }
 
 /* Estilização de hover do botão de contato 1 */
-.bot1:hover
-{
-    padding: 11px 33px;
-    transition: 0.4s;
-    color: black;
-    filter: brightness(2);
-    border-radius: 30px;
-    background-color: #06BC10;
+.bot1:hover {
+  padding: 11px 33px;
+  transition: 0.4s;
+  color: black;
+  filter: brightness(2);
+  border-radius: 30px;
+  background-color: #06bc10;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
-.sectionInternet5G
-{
+.sectionInternet5G {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f8f8f8;
-  
 }
 
-.conteudo
-{
+.conteudo {
   width: 82%;
   display: flex;
   flex-direction: column;
@@ -131,17 +127,14 @@ nav ul .bot1
   align-items: center;
 }
 
-.tituloInternet5G
-{
+.tituloInternet5G {
   width: 100%;
   margin: 0 auto;
   padding: 50px;
- background-color: #ffffff;
+  background-color: #ffffff;
 }
 
-
-.tituloInternet5G p
-{
+.tituloInternet5G p {
   font-size: 54pt;
   line-height: 5rem;
   font-weight: 500;
@@ -149,70 +142,53 @@ nav ul .bot1
   padding: 0px 47px;
 }
 
-
-.imagemInternet5G
-{
- 
+.imagemInternet5G {
   margin-top: 10%;
   width: 60%;
 }
 
-.imagemInternet5G img
-{
+.imagemInternet5G img {
   width: 100%;
 }
 
-
-.subtitulo
-{
+.subtitulo {
   right: 50%;
 }
 
-
-
-.artigo
-{
+.artigo {
   display: inline-block;
   text-align: justify;
 }
-.artigo h4
-{
+.artigo h4 {
   margin-top: 5%;
   font-size: 16px;
   color: green;
 }
 
-.artigo h2
-{
+.artigo h2 {
   font-weight: 900;
   color: green;
 }
-.artigo #textoPartes
-{
+.artigo #textoPartes {
   position: relative;
   line-height: 40px;
   margin-top: 1%;
 }
 
-#textoPartes strong
-{ 
-    color:#008d0a;
+#textoPartes strong {
+  color: #008d0a;
 }
-#textoPartes a
-{
+#textoPartes a {
   color: #383838;
   font-size: 17px;
 }
 
-#textoPartes a:hover
-{
+#textoPartes a:hover {
   color: #000000;
   text-decoration: underline;
 }
 
-
-.artigos
-{
+.artigos {
   background-color: #f8f8f8;
   width: 100%;
   margin: 0 auto;
@@ -220,9 +196,8 @@ nav ul .bot1
   height: 830px;
 }
 
-.artigos h3
-{
-  color: #06BC10;
+.artigos h3 {
+  color: #06bc10;
   padding-bottom: 2%;
   margin-left: 9.5%;
   margin-top: -1%;
@@ -234,43 +209,43 @@ nav ul .bot1
   gap: 2%;
   width: 83%;
   margin-left: 9.5%;
-  
 }
 
-
-.coluna1, .coluna2, .coluna3
-{
+.coluna1,
+.coluna2,
+.coluna3 {
   width: 80%;
   height: 680px;
   display: flex;
   margin-left: 2%;
   flex-direction: column;
 }
-.coluna1 img, .coluna2 img, .coluna3 img
-{
+.coluna1 img,
+.coluna2 img,
+.coluna3 img {
   max-width: 95%;
 }
 
-.coluna1 p, .coluna2 p, .coluna3 p
-{
+.coluna1 p,
+.coluna2 p,
+.coluna3 p {
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-
-.coluna1 h1 a, .coluna2 h1 a, .coluna3 h1 a
-{
+.coluna1 h1 a,
+.coluna2 h1 a,
+.coluna3 h1 a {
   font-size: 23px;
   line-height: 40px;
-  color: #06BC10;
+  color: #06bc10;
 }
 
-.coluna1 button 
-{
+.coluna1 button {
   width: 45%;
   background-color: #008d0a;
   border: none;
-  margin-top:18%;
+  margin-top: 18%;
   height: 8%;
   border-radius: 40px;
 }
@@ -279,23 +254,23 @@ nav ul .bot1
   width: 45%;
   background-color: #008d0a;
   border: none;
-  margin-top:28%;
+  margin-top: 28%;
   height: 8%;
   border-radius: 40px;
 }
 
-.coluna3 button 
-{
+.coluna3 button {
   width: 45%;
   background-color: #008d0a;
   border: none;
-  margin-top:37.75%;
+  margin-top: 37.75%;
   height: 8%;
   border-radius: 40px;
 }
 
-.coluna1 a, .coluna2 a, .coluna3 a
-{
+.coluna1 a,
+.coluna2 a,
+.coluna3 a {
   color: white;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -325,7 +300,6 @@ nav ul .bot1
 /*Alterações da imagem como tamanho e posição dentro da div*/
 .logoFooter img {
   width: 100%;
-  
 }
 
 /*Div que sustenta Logo Ecoplus, intel, advantech, microsoft e e-book */
@@ -376,8 +350,7 @@ nav ul .bot1
 }
 
 /*Logo Advantech*/
-.advantechLogo
-{
+.advantechLogo {
   padding-left: 26%;
 }
 
@@ -418,3 +391,354 @@ nav ul .bot1
   width: 10%;
 }
 
+/*===========================================RESPONSIVIDADE==========================================================*/
+
+/* Add a style rule for small screens */
+@media (min-width: 320px) and (max-width: 667px){
+  /* Center the logo and make it smaller */
+  .container {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .container a {
+    width: 36%;
+  }
+
+  .container a #imagemEco {
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 1%;
+  }
+
+  .container nav {
+    width: 50%;
+  }
+
+  /* Make the navigation links stack vertically */
+  .container nav ul {
+    margin-top: 12%;
+    margin-left: -22%;
+  }
+
+  /* Adjust the font size of the navigation links */
+  nav ul li a {
+    font-size: 10px;
+  }
+  /* Add some spacing between the navigation links */
+  nav ul li {
+    margin-top: -2%;
+    margin-left: -8%;
+    padding: 0px 0px 23px 0px;
+  }
+
+  /* Adjust the font size of the article title */
+  .tituloInternet5G p {
+    font-size: 24px;
+  }
+  /* Adjust the font size of the article text */
+  .artigo p {
+    font-size: 16px;
+  }
+
+  /* Botão de contato 1 localizado no cabeçalho ao lado direito */
+  .container nav ul .bot1 {
+    margin-left: -2%;
+    margin-top: -1%;
+    padding: 5% 7%;
+    font-weight: 650;
+    font-size: 8px;
+    line-height: 1%;
+  }
+
+  .artigos {
+    padding-top: 4%;
+    height: 500px;
+  }
+  
+  .artigos h3 {
+    padding-bottom: 4%;
+  }
+  .artigosRelacionados {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+    width: 83%;
+    margin-left: 9.5%;
+  }
+
+  .coluna1 p,
+  .coluna2 p,
+  .coluna3 p {
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  
+  .coluna1 h1 a{
+    font-size: 11px;
+    line-height: 1rem;
+  }
+  .coluna2 h1 a,
+  .coluna3 h1 a {
+    font-size: 13px;
+    line-height: 1em;
+  }
+  
+  .coluna1 button {
+    width: 75%;
+    margin-top: 10%;
+  }
+
+  .coluna2 button {
+    margin-top: 45%;
+    width: 75%;
+  }
+ .coluna3 button {
+  margin-top: 79%;
+    width: 75%;
+  }
+
+/*========================== FOOTER ===============================*/
+
+/*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/
+.footer {
+  height: 350px;
+}
+
+/*Div que abriga a logo da ECO+ no footer*/
+.logoFooter {
+  width: 28%;
+  margin-top: 20%;
+  margin-left: 0%;
+}
+
+/*Div que sustenta a política de privacidade, email, e logos*/
+.content {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 5%;
+}
+
+.content a {
+  font-size: 9px;
+  text-align: center;
+  font-weight: 400;
+}
+
+/*Div que sustenta Logo Ecoplus, intel, advantech, microsoft e e-book */
+.footerNav {
+  width: 35%;
+  margin-left: 34%;
+}
+
+  /*Lista da barra de navegação acima de "Política de Privacidade"*/
+.footerNav ul {
+  margin-left: -17%;
+}
+
+/*Itens da lista*/
+.footerNav li {
+  margin-left: -16%;
+  word-spacing: 2px;
+  font-size: 10px;
+  font-weight: 400;
+}
+  /*Div que sustenta a imagem do ebook*/
+.ebook {
+  margin-left: 76%;
+  margin-top: -54%;
+}
+  /*Botão para download do ebook*/
+.downloadEbook {
+  margin-top: -4%;
+  height: 50px;
+  font-weight: 200;
+}
+
+.downloadEbook a {
+  font-size: 11px;
+}
+/*Logo da Microsoft*/
+.microsoftLogo {
+  margin-left: -10%;
+  width: 100%;
+}
+
+/*Logo da Microsoft*/
+.microsoftLogo img {
+  margin-left: -10%;
+  width: 85%;
+}
+
+/*Logo Intel*/
+.intelLogo {
+  margin-left: -13%;
+  width: 100%;
+}
+/*Logo Advantech*/
+.intelLogo img {
+  width: 80%;
+}
+
+/*Logo Advantech*/
+.advantechLogo {
+  margin-left: -10%;
+  width: 100%;
+}
+/*Logo Advantech*/
+.advantechLogo img {
+  width: 85%;
+}
+
+}
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+  /* CSS rules for small mobile devices */
+
+   .coluna1 p,
+   .coluna2 p,
+   .coluna3 p {
+     margin-top: 5%;
+     margin-bottom: 15%;
+   }
+   
+   .coluna1 h1 a{
+     font-size: 23px;
+     line-height: 2rem;
+   }
+   .coluna2 h1 a,
+   .coluna3 h1 a {
+     font-size: 23px;
+     line-height: 2em;
+   }
+ 
+  .coluna3 button {
+   margin-top: 40%;
+   }
+   .ebook
+   {
+     margin-top: -33%;
+   }
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+  /* CSS rules for tablets /
+  .container {
+  / ... */
+  }
+  
+  
+  @media (min-width: 992px) and (max-width: 1100px) {
+  /* CSS rules for laptops */
+  .container {
+    display: inline-flex;
+
+  }
+
+  .container #imagemEco {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 130%;
+  }
+
+
+  /* Make the navigation links stack vertically */
+  .container nav ul {
+    justify-content: space-evenly;
+    display: inline-flex;
+    height: 20px;
+    margin-left: -10%;
+    margin-top: 3%;
+  }
+
+  .container nav ul .bot1 {
+    margin-left: 2%;
+    margin-top: 3%;
+    padding: 3% 7%;
+    font-weight: 650;
+    font-size: 12px;
+    line-height: 1%;
+  }
+
+  /*Div que sustenta Logo Ecoplus, intel, advantech, microsoft e e-book */
+.footerNav {
+  color: white;
+  display: inline-block;
+  list-style: none;
+  width: 35%;
+  justify-content: center;
+  margin-top: -13%;
+  margin-left: 34%;
+}
+
+    /*Lista da barra de navegação acima de "Política de Privacidade"*/
+.footerNav ul {
+  margin-left: -10%;
+}
+
+/*Itens da lista*/
+.footerNav li {
+  word-spacing: 2px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+  .coluna1 p,
+  .coluna2 p,
+  .coluna3 p {
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  
+  .coluna1 h1 a{
+    font-size: 23px;
+    line-height: 2rem;
+  }
+  .coluna2 h1 a,
+  .coluna3 h1 a {
+    font-size: 23px;
+    line-height: 2em;
+  }
+  .coluna2 button {
+    margin-top: 39%;
+    }
+ .coluna3 button {
+  margin-top: 75%;
+  }
+  .ebook
+  {
+    margin-top: -38.5%;
+  }
+  }
+  
+
+  @media (min-width: 1200px) {
+  /* CSS rules for desktops */
+  .coluna1 p,
+  .coluna2 p,
+  .coluna3 p {
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+  
+  .coluna1 h1 a{
+    font-size: 23px;
+    line-height: 2rem;
+  }
+  .coluna2 h1 a,
+  .coluna3 h1 a {
+    font-size: 23px;
+    line-height: 2em;
+  }
+
+ .coluna3 button {
+  margin-top: 40%;
+  }
+  .ebook
+  {
+    margin-top: -32.1%;
+  }
+  }
+  
