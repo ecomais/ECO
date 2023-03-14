@@ -402,7 +402,7 @@ nav ul .bot1 {
   }
 
   .container a {
-    width: 36%;
+    width: 90%;
   }
 
   .container a #imagemEco {
@@ -411,51 +411,65 @@ nav ul .bot1 {
     margin-left: 1%;
   }
 
-  .container nav {
-    width: 50%;
-  }
+.container nav {
+  display: inline-flex;
+  width: 100%;
+}
 
   /* Make the navigation links stack vertically */
   .container nav ul {
-    margin-top: 12%;
-    margin-left: -22%;
+    margin-top: 25%;
+    padding: 0%;
+    margin-left: -35%;
+    word-spacing: 0em;
+    width: auto;
+  }
+  /* Botão de contato 1 localizado no cabeçalho ao lado direito */
+  .container nav ul a.bot1{
+    padding: 2% 3%;
+    border-radius: 2em;
+    font-size: 8px;
+    margin-left: -5%;
   }
 
   /* Adjust the font size of the navigation links */
   nav ul li a {
-    font-size: 10px;
+    margin-left: -2%;
+    font-size: 9px;
   }
   /* Add some spacing between the navigation links */
   nav ul li {
-    margin-top: -2%;
-    margin-left: -8%;
-    padding: 0px 0px 23px 0px;
+    margin-left: -10%;
+    padding: 0px 0px 0px 0px;
   }
 
   /* Adjust the font size of the article title */
   .tituloInternet5G p {
-    font-size: 24px;
+    font-size: 15px;
+    margin-top: -12%;
+    line-height: 3em;
+    margin-bottom: -8%;
+    font-weight: 600;
+    padding: 0%;
+  }
+
+  .artigo h2 {
+    font-size: 18px;
   }
   /* Adjust the font size of the article text */
   .artigo p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  /* Botão de contato 1 localizado no cabeçalho ao lado direito */
-  .container nav ul .bot1 {
-    margin-left: -2%;
-    margin-top: -1%;
-    padding: 5% 7%;
-    font-weight: 650;
-    font-size: 8px;
-    line-height: 1%;
-  }
 
   .artigos {
     padding-top: 4%;
     height: 500px;
   }
-  
+  .artigo h2 {
+  font-weight: 900;
+  color: green;
+}
   .artigos h3 {
     padding-bottom: 4%;
   }
@@ -481,21 +495,24 @@ nav ul .bot1 {
   .coluna2 h1 a,
   .coluna3 h1 a {
     font-size: 13px;
-    line-height: 1em;
+    line-height: 2em;
   }
   
   .coluna1 button {
     width: 75%;
-    margin-top: 10%;
+    margin-top: 27%;
+    height: 5%;
   }
 
   .coluna2 button {
-    margin-top: 45%;
+    margin-top: 49%;
     width: 75%;
+    height: 5%;
   }
  .coluna3 button {
-  margin-top: 79%;
+  margin-top: 94%;
     width: 75%;
+    height: 5%;
   }
 
 /*========================== FOOTER ===============================*/
@@ -509,27 +526,25 @@ nav ul .bot1 {
 .logoFooter {
   width: 28%;
   margin-top: 20%;
-  margin-left: 0%;
+  margin-left: 4%;
 }
 
 /*Div que sustenta a política de privacidade, email, e logos*/
 .content {
   font-size: 12px;
-  text-align: center;
   font-weight: 400;
   margin-top: 5%;
 }
 
 .content a {
   font-size: 9px;
-  text-align: center;
   font-weight: 400;
 }
 
 /*Div que sustenta Logo Ecoplus, intel, advantech, microsoft e e-book */
 .footerNav {
   width: 35%;
-  margin-left: 34%;
+  margin-left: 32%;
 }
 
   /*Lista da barra de navegação acima de "Política de Privacidade"*/
@@ -547,17 +562,20 @@ nav ul .bot1 {
   /*Div que sustenta a imagem do ebook*/
 .ebook {
   margin-left: 76%;
-  margin-top: -54%;
+  margin-top: -52.9%;
 }
   /*Botão para download do ebook*/
 .downloadEbook {
-  margin-top: -4%;
-  height: 50px;
+  margin-top: -5%;
+  height: 30px;
   font-weight: 200;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  line-height: 60%;
 }
 
 .downloadEbook a {
-  font-size: 11px;
+  font-size: 7px;
 }
 /*Logo da Microsoft*/
 .microsoftLogo {
