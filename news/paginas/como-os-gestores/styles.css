@@ -15,99 +15,125 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Div de cabeçalho */
-.container {
-  margin: 0 auto;
-  display: inline-flex;
+/*Style global*/
+* {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container a {
-  width: 43%;
+/* Conteúdo do body */
+body {
+  background-image: url(Gallery/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
+/* Div de cabeçalho */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2%;
+}
+
 /* Barra de navegação */
 nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
-  margin-left: 18.3%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .container #imagemEco {
-  width: 98%;
+  width: 100%;
+  transition: 0.6s;
 }
+
+#imagemEco img{
+  
+  max-width: 100%;
+}
+
 /* Controle da logo à esquerda */
 #imagemEco {
   display: block;
   transition: 0.6s;
-  padding: 25px;
-  margin-left: 36.5%;
+  padding: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  max-width: 30%;
 }
 
 /* Efeito no logo ao passar o mouse */
 #imagemEco:hover {
-  display: block;
   border-radius: 10px;
-
   box-shadow: 0 0 20px #00ff00, 0 0 10px white, 0 0 40px black;
   background: transparent;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0px);
 }
 
 /* Lista: Inicio, Eco+, Soluções, Cases, News, Clientes e Contato */
-nav ul {
-  word-spacing: 8px;
-  padding: 25px;
-  margin-right: 1%;
-  list-style: none;
-  width: 100%;
+ nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 50%;
+  margin-left: -30%;
+  max-width: 100%;
 }
 
 /* Posicionamento e tamanho nos itens dentro da lista */
-nav ul li {
-  padding: 23px 0px 27px 0px;
-  margin-left: -2px;
-  display: inline-block;
+nav li {
+  margin: 0 10px;
 }
 
 /* Estilização do item da lista clicável */
 nav ul li a {
-  padding: 10px 14px;
+  padding: 2dvh 1dvh;
   color: black;
   font-size: 11pt;
   font-weight: 750;
   transition: 0.5s;
+  display: block;
 }
 
 /* Estilização de hover */
 nav ul a:hover {
+  padding: 2dvh 1dvh;
   filter: brightness(2);
   background-color: #008d0a;
   color: black;
   border: none;
   border-radius: 3px;
-  padding: 10px 14px;
+  
 }
 
 /* Botão de contato 1 localizado no cabeçalho ao lado direito */
-nav ul .bot1 {
-  padding: 11px 33px;
+a.bot1 {
+  padding: 1dvh 3dvh;
   border-radius: 30px;
   border: none;
   background-color: #008d0a;
   color: white;
-  margin-left: 20px;
+  margin-left: 2%;
   font-weight: 650;
   font-size: 15px;
 }
 
 /* Estilização de hover do botão de contato 1 */
 .bot1:hover {
-  padding: 11px 33px;
+  padding: 1dvh 3dvh;
   transition: 0.4s;
   color: black;
   filter: brightness(2);
   border-radius: 30px;
-  background-color: #06bc10;
+  background-color: #008807;
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 .sectionInternet5G {
@@ -356,14 +382,13 @@ nav ul .bot1 {
 
 /*Div que sustenta a imagem do ebook*/
 .ebook {
-  margin-top: -30.4%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 20%;
   margin-left: 73%;
   box-shadow: 25px 15px 10px rgba(0, 0, 0, 0.3),
     15px 10px 10px rgba(0, 0, 0, 0.3);
-  position: static;
+  position: relative;
 }
 
 /*Botão para download do ebook*/
@@ -394,54 +419,55 @@ nav ul .bot1 {
 /*===========================================RESPONSIVIDADE==========================================================*/
 
 /* Add a style rule for small screens */
-@media (min-width: 320px) and (max-width: 667px){
+@media (min-width: 320px) and (max-width: 567px){
   /* Center the logo and make it smaller */
   .container {
     display: inline-flex;
     width: 100%;
   }
-
-  .container a {
-    width: 90%;
-  }
-
-  .container a #imagemEco {
+   .container #imagemEco {
     width: 100%;
-    margin-top: 15%;
-    margin-left: 1%;
+    margin-top: 5%;
+    margin-left: -10%;
   }
 
-.container nav {
-  display: inline-flex;
-  width: 100%;
+nav{
+  width: 90%;
 }
 
-  /* Make the navigation links stack vertically */
-  .container nav ul {
-    margin-top: 25%;
-    padding: 0%;
-    margin-left: -35%;
-    word-spacing: 0em;
-    width: auto;
-  }
-  /* Botão de contato 1 localizado no cabeçalho ao lado direito */
-  .container nav ul a.bot1{
-    padding: 2% 3%;
-    border-radius: 2em;
-    font-size: 8px;
-    margin-left: -5%;
-  }
+  /* Lista: Inicio, Eco+, Soluções, Cases, News, Clientes e Contato */
+ nav ul {
+  align-items: center;
+  margin-top: 2%;
+  width: 100%;
+  max-width: 100%;
+}
 
-  /* Adjust the font size of the navigation links */
-  nav ul li a {
-    margin-left: -2%;
-    font-size: 9px;
-  }
-  /* Add some spacing between the navigation links */
-  nav ul li {
-    margin-left: -10%;
-    padding: 0px 0px 0px 0px;
-  }
+/* Posicionamento e tamanho nos itens dentro da lista */
+nav li {
+  margin: 0 10px;
+  margin-left: -5%;
+}
+
+/* Estilização do item da lista clicável */
+nav ul li a {
+  padding: 2dvh 1dvh;
+  color: black;
+  font-size: 5pt;
+  font-weight: 750;
+  transition: 0.5s;
+  display: block;
+}
+
+/* Botão de contato 1 localizado no cabeçalho ao lado direito */
+a.bot1 {
+  border-radius: 30px;
+  border: none;
+  background-color: #008d0a;
+  color: white;
+  font-weight: 650;
+  font-size: 8px;
+}
 
   /* Adjust the font size of the article title */
   .tituloInternet5G p {
@@ -517,9 +543,8 @@ nav ul .bot1 {
 
 /*========================== FOOTER ===============================*/
 
-/*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/
-.footer {
-  height: 350px;
+.footer{
+  max-width: 100%;
 }
 
 /*Div que abriga a logo da ECO+ no footer*/
@@ -549,13 +574,14 @@ nav ul .bot1 {
 
   /*Lista da barra de navegação acima de "Política de Privacidade"*/
 .footerNav ul {
-  margin-left: -17%;
+  margin-left: -8em;
+
 }
 
 /*Itens da lista*/
 .footerNav li {
-  margin-left: -16%;
-  word-spacing: 2px;
+  margin-left: 1%;
+  word-spacing: 0px;
   font-size: 10px;
   font-weight: 400;
 }
@@ -563,6 +589,9 @@ nav ul .bot1 {
 .ebook {
   margin-left: 76%;
   margin-top: -52.9%;
+  min-width: 1%;
+  max-width: 100%;
+  position: relative;
 }
   /*Botão para download do ebook*/
 .downloadEbook {
@@ -572,6 +601,8 @@ nav ul .bot1 {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   line-height: 60%;
+  min-width: 1%;
+  max-width: 100%;
 }
 
 .downloadEbook a {
@@ -729,7 +760,7 @@ nav ul .bot1 {
     margin-top: 3%;
   }
 
-  .container nav ul .bot1 {
+  .container nav ul li .bot1 {
     margin-left: 2%;
     margin-top: 3%;
     padding: 3% 7%;
