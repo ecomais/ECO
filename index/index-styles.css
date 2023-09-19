@@ -670,7 +670,7 @@ nav ul .bot1 {
 }
 
 /*Div responsável por imagens, e-book, logos da microsoft, intel e advantech, botões de navegação e email*/
-.footer {
+footer {
   border-top: 5px solid;
   /* adjust the width as needed */
   border-image: linear-gradient(to right, #000000, #17b317);
@@ -787,4 +787,3 @@ nav ul .bot1 {
   background-clip: text;
   width: 10%;
 }
-
