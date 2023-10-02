@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Gallery/favicon.ico" type="image/x-icon">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="index-styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/index-styles.css">
+    <link rel="stylesheet" href="src/css/responsividade.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+   
     <title>ECO+</title>
 </head>
 
@@ -22,9 +22,8 @@
     <header class="container">
         <section>
             <a href="index.html" class="logo">
-                <img src="Gallery/Logo-EcoMais-Tradicional.png" alt="logo">
+                <img src="src/Gallery/Logo-EcoMais-Tradicional.png" alt="logo">
             </a>
-            
         </section>
         <label class="bar" for="check">
             <input type="checkbox" id="check">
@@ -34,7 +33,7 @@
         </label>
         <nav id="mobile-menu">
             <a href="index.html" >
-                <img src="Gallery/Logo-ECO-Plus-Site.png" alt="logo" class="logo-menu">
+                <img src="src/Gallery/Logo-ECO-Plus-Site.png" alt="logo" class="logo-menu">
             </a>
             <ul>
                 <li><a href="index.html" rel="next" target="_self">INICIO</a></li>
@@ -52,34 +51,33 @@
             <section class="m1">
                 <h3>Deixe a Máquina <br> Falar por você!</h3>
                 <p>Assegure vantagem competitiva <br> perante seus concorrentes!</p>
-                <iframe width="100" height="100" src="https://www.youtube.com/embed/zpQn2JphMdU"
+                <iframe src="https://www.youtube.com/embed/zpQn2JphMdU"
                 title="As tendências da IoT" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+                allowfullscreen></iframe>
             </section>
             <a href="" rel="" target="_self" class="bot1" id="iframe-button">Entre em Contato!</a>
         </article>
        <article class="m2">
             <ul class="feature-list">
                 <li class="feature-block">
-                    <img src="Gallery/1.png" id="i1" alt="logo">
+                    <img src="src/Gallery/1.png" id="i1" alt="logo">
                     <h4 class="title1" style="color:rgb(34, 139, 46)">Produtividade</h4>
                     <p>Aumento de produtividade sem investir em mais máquinas, com maior lucratividade!</p>
                 </li>
                 <li class="feature-block">
-                    <img src="Gallery/2.png" alt="Conexão Direta com ERP" id="i2" >
+                    <img src="src/Gallery/2.png" alt="Conexão Direta com ERP" id="i2" >
                     <h4 class="title2" style="color:rgb(34, 139, 46)">Conexão direta ao ERP</h4>
                     <p>Informações concentradas em um único lugar, integrando os dados com mais segurança e
                         assertividade.</p>
                 </li>
                 <li class="feature-block">
-                    <img src="Gallery/3.png" alt="Crescimento e Rentabilidade" id="i3">
+                    <img src="src/Gallery/3.png" alt="Crescimento e Rentabilidade" id="i3">
                     <h4 class="title3" style="color:rgb(34, 139, 46)">Rentabilidade</h4>
                     <p>Agilidade nos processos internos, resultando em melhores ganhos para a sua empresa.</p>
                 </li>
                 <li class="feature-block">
-                    <img src="Gallery/4.png" alt="Manutenção Preditiva">
+                    <img src="src/Gallery/4.png" alt="Manutenção Preditiva">
                     <h4 class="title4" style="color:rgb(34, 139, 46)">Manutenção Preditiva</h4>
                     <p>Redução de paradas não-planejadas, aumentando o tempo de disponibilidade dos equipamentos.
                     <p>
@@ -88,7 +86,7 @@
             <button id="iframe-button"><a href="">Saiba Mais!</a></button>
         </article>
         <article class="m3">
-           <img src="Gallery/fremax.png" alt="freemax-logo">
+           <img src="src/Gallery/fremax.png" alt="freemax-logo">
             <ul class="case-Fremax">
                     <li>Aumento da disponibilidade da máquina em <strong>8%</strong>;</li>
                     <li>Diagnóstico em <strong>tempo real</strong> do equipamento;</li>
@@ -96,7 +94,7 @@
                         <strong>R$ 4.000,00</strong>.</li>
                     <p>João Paulo Dias Eletricista/Programador Freemax|Autopeças</p>
             </ul>
-            <img src="Gallery/braspo.png" alt="braspo-logo">
+            <img src="src/Gallery/braspo.png" alt="braspo-logo">
 
             <ul class="case-Braspo ">
                 <li> Aumento da disponibilidade da máquina em <strong>10%</strong>;</li>
@@ -110,7 +108,7 @@
                     <form id="formulario">
                         <ul>
                             <li class="form-item">
-                                <label style="color:#00d800">Seu Nome</label>
+                                <label>Seu Nome</label>
                                 <input type="text" name="nome" value-size="40" placeholder="Digite seu nome">
                             </li>
                             <li>
@@ -149,7 +147,7 @@
                         <p id="mark1">Monitore sua máquina</p>
                         <h4> de onde você estiver,</h4>
                         <p id="mark2">na palma da sua mão!</p>
-                        <img src="Gallery/sar5tois6g8.png" alt="Eco" width="298px">
+                        <img src="src/Gallery/sar5tois6g8.png" alt="Eco" width="298px">
                 </section>
 
             <section class="prefooter2">
@@ -164,15 +162,15 @@
             <section class="logos">
                 <h2 class="titulo-clientes">Conheça Nossos Clientes!</h2>
                 <div class="logos-slide">
-                    <img src="Gallery/logo-Microsoft-Partner (Pequeno).png" alt="logo-Microsoft-Partner">
-                    <img src="Gallery/intel (Pequeno).png" alt="intel-logo">
-                    <img src="Gallery/advantech (Pequeno).png" alt="Advantech-logo">
+                    <img src="src/Gallery/logo-Microsoft-Partner (Pequeno).png" alt="logo-Microsoft-Partner">
+                    <img src="src/Gallery/intel (Pequeno).png" alt="intel-logo">
+                    <img src="src/Gallery/advantech (Pequeno).png" alt="Advantech-logo">
                 </div>
             </section>
         </article> 
     </main>
    <footer>
-        <section class="logoFooter"><img src="Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus">
+        <section class="logoFooter"><img src="src/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus">
         </section>
         <article class="footerNav">
             <ul>
@@ -205,12 +203,12 @@
             </section>
         </article>
         <section class="ebook">
-            <img src="Gallery/iot.png" alt="E-book" width="100%">
+            <img src="src/Gallery/iot.png" alt="E-book" width="100%">
             <div class="downloadEbook"><a href="">Faça o download <br><strong>gratuito do E-book</strong></a></div>
         </section>
     </footer>
-    <script src="index-script.js"></script>
-   
+    <script src="src/JS/index-script.js"></script>
+
 </body>
 
 </html>
