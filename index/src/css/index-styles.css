@@ -126,6 +126,8 @@ input[type]:checked ~ span.middle {
 
 #mobile-menu ul {
   padding-bottom: 1.5rem;
+  display: grid;
+  height: 80vh;
 }
 .logo-menu{
   max-width: 60%;
