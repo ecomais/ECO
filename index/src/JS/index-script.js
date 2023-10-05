@@ -4,7 +4,10 @@ $(document).ready(() => {
 });
 
   let active = false;
+  const container = $('.container')
   const nav = $("#mobile-menu");
+  const bar = $(['.bar'])
+  const barComponents = $('#check, .top, .middle, .bottom')
   const copy = $('.logos-slide').clone()
   $('.logos').append(copy)
 
@@ -16,6 +19,8 @@ $(document).ready(() => {
     if (active) {
       console.log(active);
       nav.css({ opacity: 1, zIndex: 4, visibility: "visible" });
+      container.append(bar);
+      bar.append(barComponents)
 
     } else {
       console.log("closed");

@@ -92,7 +92,7 @@ input[type]:checked ~ span.top {
   transform: rotate(45deg);
   transform-origin: top left;
   width: 18px;
-  left: 8px;
+  left: 9px;
 }
 
 input[type]:checked ~ span.bottom {
@@ -121,9 +121,12 @@ input[type]:checked ~ span.middle {
   opacity: 0;
   transition: .6s ease;
   visibility: hidden;
+  display: grid;
 }
 
-
+#mobile-menu ul {
+  padding-bottom: 1.5rem;
+}
 .logo-menu{
   max-width: 60%;
   display: grid;
@@ -141,11 +144,12 @@ input[type]:checked ~ span.middle {
 
 #mobile-menu li {
   transition: 0.5s;
-  padding: 1.55rem 0.6rem;
+  padding: 0;
   border-bottom: 1px solid rgba( 255, 255, 255, 0.2 );
   font-size: 1rem;
   font-weight: 550;
   width: 95%;
+  display: grid;
   place-self: center center;
 }
 
@@ -153,8 +157,9 @@ input[type]:checked ~ span.middle {
   margin-top: .5rem;
 }
 
-#mobile-menu a {
+#mobile-menu li a {
   color: white;
+  padding: 1.55rem 0.6rem;
 }
 
 :where(#mobile-menu ul) li:hover:not(li:last-child) {
@@ -178,7 +183,6 @@ input[type]:checked ~ span.middle {
   font-size: 1rem;
   border-radius: 3rem;
   background: linear-gradient(145deg, #027200, #026000);
-  
 }
 
 .bot1:hover {
