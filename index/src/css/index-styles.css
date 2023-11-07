@@ -557,11 +557,11 @@ footer {
 
 .logoFooter{
   display: flex;
-
+  gap: 1rem;
 }
 
 .logoFooter a {
-  width: 30%;
+  width: 20%;
 }
 .logoFooter img {
   max-width: 100%;
@@ -580,7 +580,7 @@ footer {
 }
 
 .blocoNav1 a {
-  font-size: .6rem;
+  font-size: .7rem;
 }
 
 .navFooter{
