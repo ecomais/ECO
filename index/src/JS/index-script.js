@@ -1,34 +1,57 @@
-$(document).ready(() => {
-  $('#select').select2({ 
-    width: "100%"
-});
-
+window.onload = function() {
   let active = false;
-  const container = $('.container')
-  const nav = $("#mobile-menu");
-  const bar = $(['.bar'])
-  const barComponents = $('#check, .top, .middle, .bottom')
-  const copy = $('.logos-slide').clone()
-  $('.logos').append(copy)
-
-
+  let lightTheme = false;
+  const body = document.body
+  const container = document.querySelector('.container');
+  const nav = document.getElementById("mobile-menu");
+  const barComponents = document.querySelectorAll('#check, .top, .middle, .bottom');
+  const logos = document.querySelector(".logos");
+  const checkbox = document.getElementById("checkbox");
+  const m2 = document.getElementById("m2");
+  const aEcoPlus = document.getElementById("aEcoPlus");
+  const textoFoto = document.getElementById("textoFoto");
+  const ecoTitle = document.getElementById("ecoTitle");
+  // Clone the logos-slide element
+  const copy = document.querySelector('.logos-slide').cloneNode(true);
+  logos.appendChild(copy);
 
   function toggleClick() {
     active = !active;
 
     if (active) {
       console.log(active);
-      nav.css({ opacity: 1, zIndex: 4, visibility: "visible" });
-      container.append(bar);
-      bar.append(barComponents)
-
+      nav.style.cssText = 'opacity: 1; z-index: 4; visibility: visible;';
+      container.appendChild(bar);
+      for (const element of barComponents) {
+        bar.appendChild(element);
+      }
     } else {
       console.log("closed");
-      nav.css({ opacity: 0, zIndex: 0, visibility: "hidden" });
-
+      nav.style.cssText = 'opacity: 0; z-index: 0; visibility: hidden;';
+      container.removeChild(bar);
     }
   }
 
-  // Add an event listener to the checkbox
-  $("#check").on("click", toggleClick);
-});
+  function toggleLight() {
+    lightTheme = !lightTheme;
+
+    if (lightTheme) {
+      console.log('lightTheme: On');
+      body.style.cssText = 'background-color: rgb(8, 41, 12)';
+      m2.style.cssText = 'background-color: rgb(8, 36, 6)';
+      aEcoPlus.style.cssText = 'background-color: rgb(174, 180, 174)';
+      textoFoto.style.cssText = 'color: #254C1F';
+      ecoTitle.style.cssText = 'color: #254D1F'
+    } else {
+      console.log("OFF");
+      body.style.cssText = 'background-color: rgb(11,11,11)';
+      m2.style.cssText = 'background-color: rgb(11,11,11)';
+      aEcoPlus.style.cssText = 'background-color: rgb(11,11,11)';
+      textoFoto.style.cssText = 'color: ##d9d9d9;'
+      ecoTitle.style.cssText = 'color: ##d9d9d9;'
+    }
+  }
+
+  barComponents[0].addEventListener("click", toggleClick);
+  checkbox.addEventListener("click", toggleLight);
+};

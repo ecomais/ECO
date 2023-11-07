@@ -8,206 +8,180 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Gallery/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/css/index-styles.css">
-    <link rel="stylesheet" href="src/css/responsividade.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-   
+    <link rel="stylesheet" href="src/css/responsividade.css">   
     <title>ECO+</title>
 </head>
 
 <body>
     <header class="container">
-        <section>
+        <section class="btn-theme">
             <a href="index.html" class="logo">
                 <img src="src/Gallery/Logo-EcoMais-Tradicional.png" alt="logo">
             </a>
+            <div class="toggle-switch">
+                <label class="switch-label" for="checkbox">
+                  <input type="checkbox" class="checkbox" id="checkbox">
+                  <span class="slider"></span>
+                </label>
+              </div>  
+              <label class="bar" for="check">
+                <input type="checkbox" id="check">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </label>
+            <nav id="mobile-menu">
+                <a href="index.html" >
+                    <img src="src/Gallery/Logo-ECO-Plus-Site.png" alt="logo" class="logo-menu">
+                </a>
+                <ul>
+                    <li><a href="index.html" rel="next" target="_self">INICIO</a></li>
+                    <li><a href="../eco+/ecoplus.html" rel="next" target="_self">ECO+</a></li>
+                    <li><a href="../solucoes/solucoes.html" rel="next" target="_self">SOLUÇÕES</a></li>
+                    <li><a href="../cases/cases.html" rel="next" target="_self">CASES</a></li>
+                    <li><a href="../news/news.html" rel="next" target="_self">NEWS</a></li>
+                    <li><a href="../clientes/clientes.html" rel="next" target="_self">CLIENTES</a></li>
+                </ul>
+                <a href="../contato/contato.html" rel="next" target="_self" class="bot1">CONTATO</a>
+            </nav>
         </section>
-        <label class="bar" for="check">
-            <input type="checkbox" id="check">
-            <span class="top"></span>
-            <span class="middle"></span>
-            <span class="bottom"></span>
-        </label>
-        <nav id="mobile-menu">
-            <a href="index.html" >
-                <img src="src/Gallery/Logo-ECO-Plus-Site.png" alt="logo" class="logo-menu">
-            </a>
-            <ul>
-                <li><a href="index.html" rel="next" target="_self">INICIO</a></li>
-                <li><a href="../eco+/ecoplus.html" rel="next" target="_self">ECO+</a></li>
-                <li><a href="../solucoes/solucoes.html" rel="next" target="_self">SOLUÇÕES</a></li>
-                <li><a href="../cases/cases.html" rel="next" target="_self">CASES</a></li>
-                <li><a href="../news/news.html" rel="next" target="_self">NEWS</a></li>
-                <li><a href="../clientes/clientes.html" rel="next" target="_self">CLIENTES</a></li>     
-            </ul>
-            <a href="../contato/contato.html" rel="next" target="_self" class="bot1">CONTATO</a>
     </header>
     <main>
         <article class="mid">
             <section class="m1">
-                <h3>Deixe a Máquina <br> Falar por você!</h3>
-                <p>Assegure vantagem competitiva <br> perante seus concorrentes!</p>
-                <iframe src="https://www.youtube.com/embed/zpQn2JphMdU"
-                title="As tendências da IoT" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                <img src="src/Gallery/mockIndustry.gif" alt="mockIndustry">
+                <h3>Deixe a Máquina Falar por você!</h3>
+                <p>Assegure vantagem competitiva perante seus concorrentes!</p>
             </section>
             <a href="" rel="" target="_self" class="bot1" id="iframe-button">Entre em Contato!</a>
-        </article>
-       <article class="m2">
-            <ul class="feature-list">
-                <li class="feature-block">
-                    <img src="src/Gallery/1.png" id="i1" alt="logo">
-                    <h4 class="title1" style="color:rgb(34, 139, 46)">Produtividade</h4>
-                    <p>Aumento de produtividade sem investir em mais máquinas, com maior lucratividade!</p>
-                </li>
-                <li class="feature-block">
-                    <img src="src/Gallery/2.png" alt="Conexão Direta com ERP" id="i2" >
-                    <h4 class="title2" style="color:rgb(34, 139, 46)">Conexão direta ao ERP</h4>
-                    <p>Informações concentradas em um único lugar, integrando os dados com mais segurança e
-                        assertividade.</p>
-                </li>
-                <li class="feature-block">
-                    <img src="src/Gallery/3.png" alt="Crescimento e Rentabilidade" id="i3">
-                    <h4 class="title3" style="color:rgb(34, 139, 46)">Rentabilidade</h4>
-                    <p>Agilidade nos processos internos, resultando em melhores ganhos para a sua empresa.</p>
-                </li>
-                <li class="feature-block">
-                    <img src="src/Gallery/4.png" alt="Manutenção Preditiva">
-                    <h4 class="title4" style="color:rgb(34, 139, 46)">Manutenção Preditiva</h4>
-                    <p>Redução de paradas não-planejadas, aumentando o tempo de disponibilidade dos equipamentos.
-                    <p>
-                </li>
-            </ul>
-            <button id="iframe-button"><a href="">Saiba Mais!</a></button>
-        </article>
-        <article class="m3">
-           <img src="src/Gallery/fremax.png" alt="freemax-logo">
-            <ul class="case-Fremax">
-                    <li>Aumento da disponibilidade da máquina em <strong>8%</strong>;</li>
-                    <li>Diagnóstico em <strong>tempo real</strong> do equipamento;</li>
-                    <li><strong>Redução expressiva de custos</strong>, pois cada substituição de cabo custava 
-                        <strong>R$ 4.000,00</strong>.</li>
-                    <p>João Paulo Dias Eletricista/Programador Freemax|Autopeças</p>
-            </ul>
-            <img src="src/Gallery/braspo.png" alt="braspo-logo">
-
-            <ul class="case-Braspo ">
-                <li> Aumento da disponibilidade da máquina em <strong>10%</strong>;</li>
-                <li>Diagnóstico em <strong>tempo real</strong> de quatro linhas de produção;</li>
-                <li>Ações de <strong>melhoria contínua</strong>, com base em dados históricos adquiridos.</li>
-                <p>João Paulo Dias Eletricista/Programador Freemax|Autopeças</p>
-            </ul>
-        </article>
-            <article class="prefooter">
-                <section class="bloco-form">
-                    <form id="formulario">
-                        <ul>
-                            <li class="form-item">
-                                <label>Seu Nome</label>
-                                <input type="text" name="nome" value-size="40" placeholder="Digite seu nome">
-                            </li>
-                            <li>
-                                <label>Seu E-mail</label>
-                                <input type="email" e-mail="email" value-size="100" placeholder="exemplo@exemplo.com">
-                            </li>
-                            <li>
-                                <label>Empresa</label>
-                                <input type="text" company="empresa" value-size="50" placeholder="Exemplo S/A">
-                            </li>
-                            <li>
-                                <label>Cargo</label>
-                                <select name="cargo" class="cargsel" id="select">
-                                    <option value="" selected hidden>Selecione...</option>
-                                    <option value="0">Comprador</option>
-                                    <option value="1">Gerente</option>
-                                    <option value="2">Diretor</option>
-                                    <option value="3">Vendedor</option>
-                                    <option value="4">Engenharia</option>
-                                    <option value="5">Outros</option>
-                                </select>
-                            </li>
-                            <li class="euConcordo">
-                                <input type="checkbox" name="agree" id="agree">
-                                <p>Eu concordo em receber notificações.</p></li>
-                            <p id="termo">Ao informar meus dados, eu concordo com a <a
-                                    href="https://www.ecoplusautomacao.com.br/politicas-de-privacidade/">Política de
-                                    privacidade</a>
-                            </p>
-                        </ul>
-                        <button type="button" id="bot4">Quero receber o contato!</button>
-                    </form> 
-                </section>
-                <section class="eMais">
-                    <h4>e mais...</h4>
-                        <p id="mark1">Monitore sua máquina</p>
-                        <h4> de onde você estiver,</h4>
-                        <p id="mark2">na palma da sua mão!</p>
-                        <img src="src/Gallery/sar5tois6g8.png" alt="Eco" width="298px">
-                </section>
-
-            <section class="prefooter2">
-                <p id="alemDisso">Além disso, você pode ter acesso à <strong>ferramentas focadas em digitalização de
-                        máquinas e
-                        processos</strong>, criando gêmeos digitais e <strong>análises de Inteligência Artificial e
-                        Machine
-                        Learning que são treinados constantemente</strong> com base nos dados adquiridos em chão de
-                    fábrica!</p>
-            </section>
- 
-            <section class="logos">
-                <h2 class="titulo-clientes">Conheça Nossos Clientes!</h2>
+            <div class="logos">
                 <div class="logos-slide">
-                    <img src="src/Gallery/logo-Microsoft-Partner (Pequeno).png" alt="logo-Microsoft-Partner">
-                    <img src="src/Gallery/intel (Pequeno).png" alt="intel-logo">
-                    <img src="src/Gallery/advantech (Pequeno).png" alt="Advantech-logo">
+                    <img src="src/Gallery/zanotti (Pequeno).png" alt="Advantech-logo">
+                    <img src="src/Gallery/braspo1.png" alt="Braspó Logo">
+                    <img src="src/Gallery/metalsider.png" alt="Logo MetalSider">
+                    <img src="src/Gallery/schulz (Pequeno).png" alt="Logo Schulz">
+                    <img src="src/Gallery/caribor.png" alt="Logo Caribor">
+                    <img src="src/Gallery/ccp.png" alt="CCP Logo">
+                    <img src="src/Gallery/linkplas.png" alt="LinkPlas Logo">
+                    <img src="src/Gallery/krona.png" alt="Krona Logo">
                 </div>
-            </section>
-        </article> 
-    </main>
-   <footer>
-        <section class="logoFooter"><img src="src/Gallery/Logo-ECO-Plus-Site.png" alt="logo home ecoplus">
-        </section>
-        <article class="footerNav">
-            <ul>
+            </div>
+        </article>
+        <article class="m2" id="m2">
+            <ul class="feature-list">
                 <li>
-                    <a>ECO+ </a>
+                    <div class="feature-block">
+                
+                    </div>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </li>
                 <li>
-                    <a>Soluções</a>
+                    <div class="feature-block">
+                
+                    </div>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </li>
                 <li>
-                    <a>Cases</a>
+                    <div class="feature-block">
+                
+                    </div>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </li>
                 <li>
-                    <a>Clientes</a>
-                </li>
-                <li>
-                    <a>News</a>
+                    <div class="feature-block">
+                
+                    </div>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </li>
             </ul>
-            <section class="content">
-                <a href="https://www.ecoplusautomacao.com.br/politicas-de-privacidade/" rel="external">Política de
-                    privacidade</a>
-                <a href="mailto:contato@ecoplusautomacao.com.br">contato@ecoplusautomacao.com.br</a>
-                <p>©2021 ECO+</p>
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                </ul>
-            </section>
+            <ul class="results-list">
+                <li>
+                    <div class="feature-block">
+                        <h4>Resultado 1</h4>
+                        <h6>Solução 4</h6>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="feature-block">
+                        <h4>Resultado 2</h4>
+                        <h6>Solução 3</h6>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="feature-block">
+                        <h4>Resultado 3</h4>
+                        <h6>Solução 2</h6>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="feature-block">
+                        <h4>Resultado 1</h4>
+                        <h6>Solução 4</h6>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="ecoplusNumbers-list">
+                <li>
+                        <h4>1000</h4>
+                        <p class="description">Máquinas Monitoradas</p>
+    
+                </li>
+                <li>
+                    <h4>200</h4>
+                    <p class="description">Clientes Atendidos</p>
+                </li>
+                <li>
+                    <h4>4 Meses</h4>
+                    <p class="description">Payback</p>
+                </li>
+                <li>
+                    <h4>90%</h4>
+                    <p class="description">Ganho a Longo Prazo</p>
+                </li>
+            </ul>
         </article>
-        <section class="ebook">
-            <img src="src/Gallery/iot.png" alt="E-book" width="100%">
-            <div class="downloadEbook"><a href="">Faça o download <br><strong>gratuito do E-book</strong></a></div>
+    </main>
+    
+    <article class="aEcoPlus" id="aEcoPlus">
+        <h1 id="ecoTitle">A ECO+</h1>
+        <figure class="ecoTeam">
+                <img src="src/Gallery/ESCOLHIDA.jpg" alt="Foto Time Ecoplus" class="timeEcoPlus">
+         <figcaption id="textoFoto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+            </figcaption>
+        </figure>
+        <section>
+
+        </section>
+    </article>
+   <footer>
+        <section class="logoFooter"> 
+            <a href="index.html" class="logo">
+                <img src="src/Gallery/Logo-EcoMais-Tradicional.png" alt="logo">
+            </a>
+                <article class="navContent">
+                    <section class="blocoNav1">
+                        <a href="/" class="navFooter">Cases</a>
+                        <a href="/" class="navFooter">Conteúdos</a>
+                    </section>
+                    <section class="blocoNav1">
+                        <a href="/" class="navFooter">Soluções</a>
+                        <a href="/" class="navFooter">Sobre</a>
+                    </section>
+                </article>
         </section>
     </footer>
     <script src="src/JS/index-script.js"></script>
-
 </body>
 
 </html>
