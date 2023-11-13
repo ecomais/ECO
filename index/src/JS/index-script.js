@@ -1,4 +1,20 @@
 window.onload = function() {
+
+  // const mobileMenu = ` 
+  //   <nav id="mobile-menu">
+  //   <a href="index.html" >
+  //       <img src="src/Gallery/Logo-ECO-Plus-Site.png" alt="logo" class="logo-menu">
+  //   </a>
+  //   <ul>
+  //       <li><a href="index.html" rel="next" target="_self">INICIO</a></li>
+  //       <li><a href="../eco+/ecoplus.html" rel="next" target="_self">ECO+</a></li>
+  //       <li><a href="../solucoes/solucoes.html" rel="next" target="_self">SOLUÇÕES</a></li>
+  //       <li><a href="../cases/cases.html" rel="next" target="_self">CASES</a></li>
+  //       <li><a href="../news/news.html" rel="next" target="_self">NEWS</a></li>
+  //       <li><a href="../clientes/clientes.html" rel="next" target="_self">CLIENTES</a></li>
+  //   </ul>
+  //   <a href="../contato/contato.html" rel="next" target="_self" class="bot1">CONTATO</a>
+  // </nav>`;
   let active = false;
   let lightTheme = false;
   const body = document.body
@@ -11,6 +27,8 @@ window.onload = function() {
   const aEcoPlus = document.getElementById("aEcoPlus");
   const textoFoto = document.getElementById("textoFoto");
   const ecoTitle = document.getElementById("ecoTitle");
+  const btnTheme = document.querySelector(".btn-theme");
+  
   // Clone the logos-slide element
   const copy = document.querySelector('.logos-slide').cloneNode(true);
   logos.appendChild(copy);
@@ -21,14 +39,9 @@ window.onload = function() {
     if (active) {
       console.log(active);
       nav.style.cssText = 'opacity: 1; z-index: 4; visibility: visible;';
-      container.appendChild(bar);
-      for (const element of barComponents) {
-        bar.appendChild(element);
-      }
     } else {
       console.log("closed");
       nav.style.cssText = 'opacity: 0; z-index: 0; visibility: hidden;';
-      container.removeChild(bar);
     }
   }
 
@@ -47,8 +60,8 @@ window.onload = function() {
       body.style.cssText = 'background-color: rgb(11,11,11)';
       m2.style.cssText = 'background-color: rgb(11,11,11)';
       aEcoPlus.style.cssText = 'background-color: rgb(11,11,11)';
-      textoFoto.style.cssText = 'color: ##d9d9d9;'
-      ecoTitle.style.cssText = 'color: ##d9d9d9;'
+      textoFoto.style.cssText = 'color: #d9d9d9;'
+      ecoTitle.style.cssText = 'color: #d9d9d9;'
     }
   }
 

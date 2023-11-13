@@ -19,46 +19,49 @@
 
 <body>
     <header class="container">
-        <section class="btn-theme">
+        <nav class="btn-theme">
             <a href="index.html" class="logo">
                 <img src="src/Gallery/Logo-EcoMais-Tradicional.png" alt="logo">
             </a>
-            <div class="toggle-switch">
-                <label class="switch-label" for="checkbox">
-                  <input type="checkbox" class="checkbox" id="checkbox">
-                  <span class="slider"></span>
-                </label>
-              </div>  
-              <label class="bar" for="check">
+            <label class="bar" for="check">
                 <input type="checkbox" id="check">
                 <span class="top"></span>
                 <span class="middle"></span>
                 <span class="bottom"></span>
             </label>
-            <nav id="mobile-menu">
-                <a href="index.html" >
-                    <img src="src/Gallery/Logo-ECO-Plus-Site.png" alt="logo" class="logo-menu">
-                </a>
+            <section id="mobile-menu">
+                    <section class="sub-menu">
+                        <a href="index.html" >
+                            <img src="src/Gallery/Logo-ECO-Plus-Site.png" alt="logo" class="logo-menu">
+                        </a>
+                        <div class="toggle-switch">
+                            <label class="switch-label" for="checkbox">
+                              <input type="checkbox" class="checkbox" id="checkbox">
+                              <span class="slider"></span>
+                            </label>
+                        </div>
+                    </section>
                 <ul>
-                    <li><a href="index.html" rel="next" target="_self">INICIO</a></li>
-                    <li><a href="../eco+/ecoplus.html" rel="next" target="_self">ECO+</a></li>
-                    <li><a href="../solucoes/solucoes.html" rel="next" target="_self">SOLUÇÕES</a></li>
-                    <li><a href="../cases/cases.html" rel="next" target="_self">CASES</a></li>
-                    <li><a href="../news/news.html" rel="next" target="_self">NEWS</a></li>
-                    <li><a href="../clientes/clientes.html" rel="next" target="_self">CLIENTES</a></li>
+                    <li><a href="index.html" rel="next" target="_self">SOBRE</a></li>
+                    <li><a href="../eco+/ecoplus.html" rel="next" target="_self">SOLUÇÕES+</a></li>
+                    <li><a href="../solucoes/solucoes.html" rel="next" target="_self">CASES</a></li>
+                    <li><a href="../news/news.html" rel="next" target="_self">CONTEÚDOS</a></li>
+                    <a href="../contato/contato.html" rel="next" target="_self" class="bot1">CONTATO</a>
                 </ul>
-                <a href="../contato/contato.html" rel="next" target="_self" class="bot1">CONTATO</a>
-            </nav>
-        </section>
+            </section>
+        </nav>
     </header>
     <main>
         <article class="mid">
             <section class="m1">
                 <img src="src/Gallery/mockIndustry.gif" alt="mockIndustry">
-                <h3>Deixe a Máquina Falar por você!</h3>
-                <p>Assegure vantagem competitiva perante seus concorrentes!</p>
+                <div class="initialText">
+                    <h3>Deixe a Máquina Falar por você!</h3>
+                    <p>Assegure vantagem competitiva perante seus concorrentes!</p>
+                    <a href="" rel="" target="_self" class="bot1" id="iframe-button">Entre em Contato!</a>
+                </div>
             </section>
-            <a href="" rel="" target="_self" class="bot1" id="iframe-button">Entre em Contato!</a>
+           
             <div class="logos">
                 <div class="logos-slide">
                     <img src="src/Gallery/zanotti (Pequeno).png" alt="Advantech-logo">
@@ -73,6 +76,7 @@
             </div>
         </article>
         <article class="m2" id="m2">
+            <h3 class="solucoes">Soluções</h3>
             <ul class="feature-list">
                 <li>
                     <div class="feature-block">
@@ -153,31 +157,23 @@
     
     <article class="aEcoPlus" id="aEcoPlus">
         <h1 id="ecoTitle">A ECO+</h1>
-        <figure class="ecoTeam">
-                <img src="src/Gallery/ESCOLHIDA.jpg" alt="Foto Time Ecoplus" class="timeEcoPlus">
-         <figcaption id="textoFoto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-            </figcaption>
-        </figure>
-        <section>
-
+        <section class="containerFoto">
+            <img src="src/Gallery/ESCOLHIDA.jpg" alt="Foto Time Ecoplus" class="timeEcoPlus">
+            <aside id="textoFoto">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+            </aside>
         </section>
     </article>
    <footer>
-        <section class="logoFooter"> 
-            <a href="index.html" class="logo">
-                <img src="src/Gallery/Logo-EcoMais-Tradicional.png" alt="logo">
-            </a>
-                <article class="navContent">
-                    <section class="blocoNav1">
-                        <a href="/" class="navFooter">Cases</a>
-                        <a href="/" class="navFooter">Conteúdos</a>
-                        <a href="/" class="navFooter">Soluções</a>
-                        <a href="/" class="navFooter">Sobre</a>
-                    </section>
-                </article>
-        </section>
+        <a href="index.html" class="logo">
+            <img src="src/Gallery/Logo-EcoMais-Tradicional.png" alt="logo">
+        </a>
+        <a href="/" class="navFooter">Cases</a>
+        <a href="/" class="navFooter">Conteúdos</a>
+        <a href="/" class="navFooter">Soluções</a>
+        <a href="/" class="navFooter">Sobre</a>
+
     </footer>
     <script src="src/JS/index-script.js"></script>
 </body>

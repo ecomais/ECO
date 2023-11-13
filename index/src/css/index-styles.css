@@ -149,7 +149,7 @@ input[type]:checked ~ span.middle {
 
 .switch-label {
   position: absolute;
-  width: 100%;
+  width: 50%;
   height: 30px;
   background-color: var(--dark);
   border-radius: 25px;
@@ -164,7 +164,7 @@ input[type]:checked ~ span.middle {
 
 .slider {
   position: absolute;
-  width: 100%;
+  width: 96%;
   height: 100%;
   border-radius: 25px;
   -webkit-transition: 0.3s;
@@ -178,10 +178,10 @@ input[type]:checked ~ span.middle {
 .slider::before {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 3px;
   left: 5px;
   width: 20px;
-  height: 18px;
+  height: 19px;
   border-radius: 50%;
   -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
   box-shadow: inset 9px -3px 0px 0px var(--light);
@@ -191,9 +191,9 @@ input[type]:checked ~ span.middle {
 }
 
 .checkbox:checked ~ .slider::before {
-  -webkit-transform: translateX(30px);
+  /* -webkit-transform: translateX(30px);
   -ms-transform: translateX(10px);
-  transform: translateX(36px);
+  transform: translateX(36px); */
   background-color: var(--dark);
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -202,10 +202,15 @@ input[type]:checked ~ span.middle {
 
 
 .logo-menu{
-  max-width: 60%;
+  max-width: 100%;;
   display: grid;
   transition: 0.3s ease-out;
   padding: .5rem;
+}
+
+.sub-menu{
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 
 .logo-menu:hover {
@@ -433,6 +438,13 @@ main{
   margin-top: 2rem;
   list-style-type: none;
 }
+.solucoes{
+  color: #D9D9D9;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  text-align: left;
+  place-self: start start;
+}
 
 .feature-block {
   display: grid;
@@ -548,10 +560,17 @@ main{
   place-self: center center;
 }
 
+footer .logo {
+  width: 100%;
+  padding: 0;
+
+}
+
 footer {
-  display: flex;
+  display: grid;
   padding: 1rem .5rem;
   gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
   background-color: #040d02;
 }
 
@@ -573,18 +592,17 @@ footer {
 }
 
 .blocoNav1 {
-    gap: 1.5rem;
+    gap: 1.6rem;
     display: flex;
     padding: 1rem 0.5rem;
     color: #d9d9d9;
 }
 
-.blocoNav1 a {
-  font-size: .7rem;
-}
 
 .navFooter{
   display: grid;
   color: #D9D9D9;
   place-content: center center;
+  font-size: .6rem;
+    text-transform: uppercase;
 }
